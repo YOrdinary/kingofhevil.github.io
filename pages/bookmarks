@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<div id="background">
+  <html>
+    <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+      <title> 书签  by城川哥哥</title>
+    <style type="text/css">
+    #background {
+	background-image: url(pictures/001.jpg);
+	margin: auto;
+	height: auto;
+	width: auto;
+}
+    </style>
+    </head> 
+    <body link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF">
+    
+    <table align="center" width="1300" height="700" border="1" bordercolor="#0000CC">
+    
+		<tbody>        
+			<tr height="50"><td colspan="4" align="center">
+				<font color="#FFFFFF">城川哥哥的书签<br/>
+				<a href="https://github.com/Kingofhevil/kingofhevil.github.io/issues/1" target="_blank"> 给我留言 
+				
+
+			</tr>
+			<tr>
+				<td width="25%" height="25" style = "color:red;">技术</td>
+				<td width="25%" height="25" style="color:red;">工作&公益</td>
+                		<td width="25%" height="25" style="color:red;">校内</td>
+                		<td width="25%" height="25" style = "color:red;">娱乐</td>                
+			</tr>
+			<tr><td width="25%" valign="top">
+        <dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/index.html" target="_blank">主页维护</a>
+        <dt><a href="http://localhost:8081/" target="_blank">8081</a>
+        <dt><a href="http://www.baidu.com/" target="_blank">百度</a>
+        <dt><a href="https://github.com/Kingofhevil" target="_blank">GitHub</a>
+        <dt><a href="https://www.google.com/" target="_blank">Google</a>
+        <dt><a href="http://bbs.csdn.net/home" target="_blank">CSDN</a>
+        <dt><a href="http://www.zhihu.com/question/28260522" target="_blank">牛站推荐</a>
+        <dt><a href="http://www.codecademy.com/zh/learn" target="_blank">Codecademy</a>
+        <dt><a href="http://gac.codeplex.com/" target="_blank">codeplex</a>
+        <dt><a href="http://zh.wikipedia.org/" target="_blank">维基百科</a>
+        <dt><a href="http://vbird.dic.ksu.edu.tw/" target="_blank">鸟哥私房菜简体中文版</a>
+        <dt><a href="http://www.w3school.com.cn/html/html_basic.asp" target="_blank">W3School</a>
+        <dt><a href="https://developers.google.com/glass/develop/overview" target="_blank">Google Developers</a>
+        <dt><a href="http://www.365testing.com/bbs/forum.php" target="_blank">365testing</a>
+        <dt><a href="http://www.google.com/glass/start/" target="_blank">Google Glass</a>
+        <dt><a href="http://code.google.com/codejam/apactest" target="_blank">Code Google</a>
+        <dt><a href="http://msdn.microsoft.com/zh-cn" target="_blank">MSDN</a>
+        <dt><a href="http://www.cjsdn.net/Doc/JDK60/index.html?overview-summary.html" target="_blank">API 中文</a>
+        <dt><a href="http://docs.oracle.com/javase/6/docs/api/" target="_blank">API  英文</a>
+        <dt><a href="http://firefox.com.cn" target="_blank">Firefoxe</a>
+        <dt><a href="http://sourceforge.net/" target="_blank">sourceforge</a>
+        <dt><a href="https://www.livecoding.tv/" target="_blank">LiveCoding</a>
+        <dt><a href="http://www.mysql.com/" target="_blank">mysql</a>
+        <dt><a href="http://www.kekenet.com/" target="_blank">可可英语</a>
+        <dt><a href="http://www.zhengjicn.com/" target="_blank">征集网</a>
+        <dt><a href="http://www.pudn.com/" target="_blank">程序员联合开发网</a>
+        <dt><a href="https://mail.google.com/mail/#inbox" target="_blank">Gmail</a>
+        <dt><a href="http://bbs.bccn.net/" target="_blank">编程论坛</a>
+        <dt><a href="http://www.aa25.cn/special/10day/index.shtml" target="_blank">DIV+CSS</a>
+        <dt><a href="http://yun.baidu.com/share/home?uk=87687223#category/type=0&qq-pf-to=pcqq.c2c" target="_blank">屁屁踢模版</a>
+        <dt><a href="http://www.ilovematlab.cn/forum.php" target="_blank">M1</a>
+        <dt><a href="http://www.matlabsky.com/" target="_blank">M2</a>
+        <dt><a href="http://www.oracle.com/technetwork/java/index.html" target="_blank">Oracle </a>
+        <dt><a href="http://www.towords.com/" target="_blank">拓词</a>
+        <dt><a href="http://www.sciencenet.cn/mathematics/" target="_blank">科学网</a>
+        <dt><a href="http://www.cnki.net/" target="_blank">中国知网</a>
+        <dt><a href="http://nianjian.xiaze.com/" target="_blank">夏泽网-中国统计年鉴</a>
+        <dt><a href="http://www.highwire.stanford.edu/" target="_blank">HighWire</a>
+        <dt><a href="http://www.sciencedirect.com/" target="_blank">ScienceDirect</a>
+        <dt><a href="http://ieeexplore.ieee.org/Xplore/dynhome.jsp?tag=1" target="_blank">IEEE Library</a>
+        <dt><a href="http://onlinelibrary.wiley.com/" target="_blank">Wiley Online Library</a>
+        <dt><a href="http://www.nature.com/" target="_blank">Nature </a>
+        <dt><a href="http://nodexl.codeplex.com/" target="_blank">NodeXL</a>
+        <dt><a href="http://linux.vbird.org/" target="_blank">vbird</a>
+        <dt><a href="http://zzk.cnblogs.com/">找找看 - 博客园</a>
+        <dt><a href="http://www.zhihuishi.com/default.aspx" target="_blank">智慧石</a>
+        <dt><a href="http://shenfeng.me/" target="_blank">沈峰</a>
+        <dt><a href="http://k-judy.github.io/" target="_blank">judy的书签</a>
+        <dt><a href="http://Jonnychen.github.io/" target="_blank">国强的书签</a>
+        <dt><a href="http://tracyking.github.io/" target="_blank">tracy的书签</a>
+                		</td>
+ 				<td width="25%" valign="top">
+        <dt><a href="http://www.google.cn/intl/zh-CN/about/careers/" target="_blank">Google Career</a>
+        <dt><a href="http://campus.dajie.com/campusIndex" target="_blank">大街网</a>
+        <dt><a href="http://www.diaochapai.com/report/ec8d17d0-1e34-459c-a268-46052e61f8b6" target="_blank">调查派</a>
+        <dt><a href="http://www.diaochapai.com/survey1385082/" target="_blank">谷歌眼镜问卷</a>
+        <dt><a href="http://webmail.pactera.com/" target="_blank">内邮</a>
+        <dt><a href="http://hub.pactera.com/" target="_blank">内网</a>
+        <dt><a href="http://www.pactera.com/" target="_blank">官网</a>
+        <dt><a href="http://www.peice.com.cn/test" target="_blank">测试</a>
+        <dt><a href="http://221.228.242.214:8111/olat7711/dmz/" target="_blank">软技能学习平台</a>
+        <dt><a href="http://www.hsbc.com.cn/1/2/" target="_blank">HSBC</a>
+        <dt><a href="http://www.51job.com/default.php" target="_blank">前程无忧</a>
+        <dt><a href="http://campus.chinahr.com/seeker/mycampus/index.asp" target="_blank">中华英才</a>
+        <dt><a href="http://xiaoyuan.zhaopin.com/" target="_blank">智联</a>
+        <dt><a href="http://xyzp.haitou.cc/" target="_blank"> 海投</a>
+        <dt><a href="http://campus.51job.com/2013/ibm/intern2.htm" target="_blank">IBM</a>
+        <dt><a href="http://campus.alibaba.com/process.htm" target="_blank">阿里</a>
+        <dt><a href="http://career.huawei.com/recruitment/portal_index.html" target="_blank">华为</a>
+        <dt><a href="http://talent.baidu.com/component1000/corp/baidu/html/intro.html" target="_blank">百度</a>
+        <dt><a href="http://www.kanzhun.com/gs.html?ka=head-com" target="_blank">看准网</a>
+        <dt><a href="www.scqcp.com" target="_blank">四川汽车票务网</a>
+        <dt><a href="http://www.jobui.com/" target="_blank">职友集</a>
+        <dt><a href="http://www.clpx.org.cn/index.asp" target="_blank">广州市残疾人职业培训中心</a>
+        <dt><a href="http://www.gdltax.gov.cn/portal/gdsite/index.htm" target="_blank">广东地税</a>
+        <dt><a href="http://www.xuechunyu.com/" target="_blank">学唇语网</a>
+        <dt><a href="http://www.cdpsn.org.cn/index.htm" target="_blank">中国残疾人服务网</a>
+        <dt><a href="http://www.cdpf.org.cn/" target="_blank">中国残疾人联合会</a>
+        <dt><a href="http://www.scdpf.org.cn/" target="_blank">四川省残疾人联合会</a>
+        <dt><a href="http://www.leshan.gov.cn/site/sitecanlian/Index.aspx" target="_blank">乐山市残疾人联合会</a>
+        <dt><a href="http://www.canyoucn.com/index.asp?bianhao=7" target="_blank">残友集团</a>
+        <dt><a href="http://bbs.cndeaf.com/?nogroups" target="_blank">聋人在线</a>
+        <dt><a href="http://www.jw.org/zh-hans/" target="_blank">耶和华见证人</a>
+        <dt><a href="http://www.uisdc.com/" target="_blank">优设</a>
+        <dt><a href="http://www.cubrid.org/blog/tags/Java/" target="_blank">CUBRID</a>
+        <dt><a href="http://www.ecocn.org/thread-196574-1-1.html" target="_blank">The origins of the financial crisis crash course</a>
+        <dt><a href="http://open.sina.com.cn/course/id_966/" target="_blank">TED: 我们为什么要睡觉</a>   
+        <dt><a href="http://www.ted.com/talks/tony_robbins_asks_why_we_do_what_we_do" target="_blank">Why we do what we do</a>
+        			</td>
+ 				<td width="25%" valign="top">
+        <dt><a href="http://www.jnu.edu.cn/" target="_blank">暨南大学</a>
+        <dt><a href="http://202.116.0.176/" target="_blank">教务处</a>
+        <dt><a href="http://202.116.13.244/patroninfo~S1*chx/1067458/items" target="_blank">图书馆</a>
+        <dt><a href="http://xsc.jnu.edu.cn/default.aspx" target="_blank">学生处</a>
+        <dt><a href="http://www.jnu.edu.cn/jnu2014/article_list.asp?channelID=5037" target="_blank">校内通知</a>
+        <dt><a href="http://study.jnu.edu.cn/webapps/portal/frameset.jsp?tab_id=_1_1" target="_blank">教学资源</a>
+        <dt><a href="http://portal.jnu.edu.cn/" target="_blank">暨大个人中心</a>
+        <dt><a href="http://cet.jnu.edu.cn/cet/default_0.htm" target="_blank">四六级网上报名</a>
+        <dt><a href="http://fee.jnu.edu.cn/student.aspx" target="_blank">缴费系统</a>
+        <dt><a href="http://202.116.1.182:9000/Frames/pindex" target="_blank">教学信息门户</a>
+        <dt><a href="http://xxxs.jnu.edu.cn/" target="_blank">信科院学生园地</a>
+        <dt><a href="http://stu.chinacampus.org/" target="_blank">中国大学生网</a>
+        <dt><a href="http://xxxy.jnu.edu.cn/" target="_blank">信科院</a>
+        <dt><a href="http://math.tsinghua.edu.cn/" target="_blank">清华大学数学系</a>
+        <dt><a href="http://math.jnu.edu.cn/" target="_blank">暨南大学数学系</a>
+        <dt><a href="http://202.116.161.83:8080/gdg2/struts2/toHomepage.action" target="_blank">广东省学位与研究生教育网</a>
+        <dt><a href="http://qgzx.jnu.edu.cn/index.php/infoIntro/index" target="_blank">暨大勤助</a>
+        <dt><a href="http://www.gradjob.com.cn/cms/index.html" target="_blank">广东大学生就业在线</a>
+        <dt><a href="http://my.chsi.com.cn/archive/zxssurvey.action" target="_blank">学信档案</a>
+        <dt><a href="http://career.jnu.edu.cn/" target="_blank">暨大就业指导服务平台</a>
+        <dt><a href="http://open.sina.com.cn/course/id_546/" target="_blank">伟大领袖如何激励行动 TED财经</a>
+                		</td>
+   				<td width="25%" valign="top">
+   	<dt><a href="http://www.zhihu.com/" target="_blank">知乎</a>
+        <dt><a href="http://www.douban.com/" target="_blank">豆瓣</a>
+        <dt><a href="http://weibo.com/" target="_blank">新浪</a>
+        <dt><a href="https://wx.qq.com/" target="_blank">微信网页版</a>
+        <dt><a href="http://www.apple.com/">Apple</a>
+        <dt><a href="https://plus.google.com/" target="_blank">Google+</a>
+        <dt><a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <dt><a href="http://www.dytt8.net/" target="_blank">电影天堂</a>
+        <dt><a href="http://www.xuandy.com/" target="_blank">炫电影</a>
+        <dt><a href="http://www.7y7.com/pic/meinv/index_2.html" target="_blank">清纯小美女</a>
+        <dt><a href="http://www.yiyi.cc/" target="_blank">一一影视</a>
+        <dt><a href="http://www.qire123.com/" target="_blank">面包网</a>
+        <dt><a href="http://www.2tu.cc/" target="_blank">迅播影院</a>
+        <dt><a href="http://www.skywhat.com/online/" target="_blank">skywhat</a>
+        <dt><a href="http://civdata.com/" target="_blank">文明5设计细节</a>
+        <dt><a href="http://fanqianghou.com/" target="_blank">咳咳咳</a>
+        <dt><a href="https://www.alipay.com/" target="_blank">支付宝</a>
+        <dt><a href="http://www.360buy.com/" target="_blank">京东</a>
+        <dt><a href="http://www.taobao.com/" target="_blank">淘宝</a>
+        <dt><a href="http://www.amazon.cn/" target="_blank">亚马逊</a>
+        <dt><a href="http://www.xiaomi.com/" target="_blank">小米</a>
+        <dt><a href="http://gz.meituan.com/" target="_blank">美团</a>
+        <dt><a href="http://www.icbc.com.cn/icbc/" target="_blank">中国工商银行</a>
+        <dt><a href="http://www.csair.com/cn/index.shtml" target="_blank">南方航空</a>
+        <dt><a href="http://et.airchina.com.cn/cn/index.shtml" target="_blank">国航</a>
+        <dt><a href="http://www.ctrip.com/" target="_blank">携程旅行网</a>
+        <dt><a href="http://www.qunar.com/" target="_blank">去哪儿网</a>
+        <dt><a href="https://kyfw.12306.cn/otn/" target="_blank">新版12306</a>
+        <dt><a href="http://www.youtx.com/room/44987/" target="_blank">林小小家庭旅馆</a>
+        <dt><a href="http://www.nipic.com/photo/" target="_blank">_昵图网</a>
+        <dt><a href="http://www.soso.com/" target="_blank">搜搜</a>
+        <dt><a href="http://my.tianya.cn/" target="_blank">天涯</a>
+        <dt><a href="http://blog.ifeng.com/" target="_blank">凤凰</a>
+        <dt><a href="http://bbs.ylmf.net/index.php" target="_blank">雨林木风</a>
+        <dt><a href="http://www.renren.com/" target="_blank">人人</a>
+        <dt><a href="http://www.kuaipan.cn/" target="_blank">金山快盘</a>
+        <dt><a href="http://www.yocity.cn/" target="_blank">旅游名店城</a>
+        <dt><a href="http://www.gamefk.com/" target="_blank">单机游戏</a>
+        <dt><a href="http://www.podvpn6.com/home.php" target="_blank">豆荚</a>
+        <dt><a href="http://gz.meituan.com/shop/4719385?mtt=1.deal%2Fdefault.0.0.i7boa94x"_blank">重庆鸡公煲</a>
+        		</td>
+       		</tr>
+        
+          	<tr height="50">
+            		<td colspan="4" align="center">
+              		<font color="#FFFFFF">by Shi Chengchuan
+              		</td>
+          	</tr>
+        </tbody>
+    </table>
+      <input name="radio" type=“radio" value="笑话一则" onclick="--Why do";/>
+      
+    </body>
+  </html>
+</div>

@@ -5,7 +5,7 @@ I am a new developer. This page is my first attempt of html.<br />
 I welcome comments, discusses and critisms.<br />
 Thanks.<br />
 
-[点击看效果]<a href="https://kingofhevil.github.io/" target="_blank"/>
+[点击看效果](<a href="https://kingofhevil.github.io/" target="_blank"/>)
 ==========================================================================
 
 目前仅把这个网站当书签使，虽然简单，但是实在太好用了！！！

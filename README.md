@@ -1,8 +1,7 @@
 A Personal Website of Kingofhevil
 =================================
 
-I am a new developer. This page is my first attempt of html.<br />
-I welcome comments, discusses and critisms.<br />
+Good good study, day day ip.<br/>
 Thanks.<br />
 
 [点击看效果](https://kingofhevil.github.io/)

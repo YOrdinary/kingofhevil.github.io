@@ -1,7 +1,7 @@
 A Personal Website of Kingofhevil
 =================================
 
-Good good study, day day ip.<br/>
+Good good study, day day up.<br/>
 Thanks.<br />
 
 [点击看效果](https://kingofhevil.github.io/)

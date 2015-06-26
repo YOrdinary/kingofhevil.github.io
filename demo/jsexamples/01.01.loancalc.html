@@ -1,20 +1,22 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   
 <html>
 <head>
 <title>JavaScript Loan Calculator</title>
-<style>                       /*这是一个CSS样式表，定义了程序输出的样式*/
-.output {font-weight:bold;}         /*计算结果定义为粗体*/
-#payment{text-decoration:underline;}/*定义id=“payment”的元素样式*/
-#gragh{border:solid black 1px;}     /*图表有一个1像素的边框*/
-th,td{vertical-align; top;}         /*表格单元格对齐方式为顶端对齐*/
+<style> /* This is a CSS style sheet: it adds style to the program output */
+.output { font-weight: bold; }           /* Calculated values in bold */
+#payment { text-decoration: underline; } /* For element with id="payment" */
+#graph { border: solid black 1px; }      /* Chart has a simple border */
+th, td { vertical-align: top; }          /* Don't center table cells */
 </style>
 </head>
 <body>
 <!--
-    这是一个html表格，其中包含<input>元素可以用来输入数据。
-    程序将在<span>元素中显示计算结果，这些元素都具有类似“interset”和“years"的id。
-    这些id将在表格下面的JavaScript代码中用到。
-    有一些input元素定义了“onchange”或“onclick”的事件处理程序，以便用户在输入数据或点击inputs时执行指定的JavaScript程序片段
+  This is an HTML table with <input> elements that allow the user to enter data
+  and <span> elements in which the program can display its results.
+  These elements have ids like "interest" and "years". These ids are used
+  in the JavaScript code that follows the table. Note that some of the input
+  elements define "onchange" or "onclick" event handlers. These specify strings
+  of JavaScript code to be executed when the user enters data or clicks.
 -->
 <table>
   <tr><th>Enter Loan Data:</th>
@@ -262,4 +264,3 @@ function chart(principal, interest, monthly, payments) {
 </script>
 </body>
 </html>
-

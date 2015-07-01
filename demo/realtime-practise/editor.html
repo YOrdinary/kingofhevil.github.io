@@ -9,5 +9,15 @@
   Click here to edit!
   </div>
   
+  <hr/>
+  
+  <iframe id="editor" src="about:blank"></iframe>
+  <script>
+    onload(function(){
+      var editor = document.getElementById("editor");
+      editor.contentDocument.designModel = "on";
+    });
+  </script>
+  
 </body>
 </html>

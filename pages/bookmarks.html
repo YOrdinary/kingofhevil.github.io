@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> 书签  by城川哥哥</title>
+<meta charset="utf-8">
+<title>书签  by城川哥哥</title>
 <style type="text/css">
-    #background {
-  position:relative;
-  top:50px;
-  left:0px;
-	margin: auto;
-	height: auto;
-	width: auto;
-	background-image: url(pictures/001.jpg);
-    }
+	#nav{		
+		position:fixed;
+		z-index:2;
+		top:0px;
+		height:40px;
+		left:0px;
+		right:0px;
+		background-color:blue;
+		border:solid red 3px;
+	}
+	#block1{		
+		position:absolute;
+		z-index:1;
+		top:50px;
+		left:0px;
+		margin: auto;
+		height: auto;
+		width: auto;
+		background-image: url(pictures/001.jpg);
+	}
+	#tail{
+		postion:relative;
+		z-index:3;
+		left:0px;
+		right:0px;
+		bottom:0px;
+		height:30px;
+		background-clor:blue;
+	}
 </style>
 </head> 
 <body link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF" bgcolor="#000000">
-  <div style="position:fixed;
-              top:0px;
-              left:0px;
-              height:50px;
-              width:auto;
-              background-color:blue">
-    <p align="center">城川哥哥的书签</p>
-  </div>
-  <hr/>
+	<div id="nav">
+		<p align="center" style="text-shadow:3px 3px 1px #888">
+			城川哥哥的书签
+			<a href="https://github.com/Kingofhevil/kingofhevil.github.io/issues/1" target="_blank"> 给我留言</a>
+		</p>
+	</div>
+	<hr/>
   
-<div id="background">
-    <table align="center" width="1300" height="700" border="1" bordercolor="#0000CC">
-    
-		<tbody>        
-			<tr height="50"><td colspan="5" align="center">
-				<font color="#FFFFFF">城川哥哥的书签<br/>
-				<a href="https://github.com/Kingofhevil/kingofhevil.github.io/issues/1" target="_blank"> 给我留言 
-				
-
-			</tr>
-			<tr>
-				<td width="20%" height="20" style = "color:red;">技术</td>
-				<td width="20%" height="20" style = "color:red;">文档</td>
-				<td width="20%" height="20" style="color:red;">工作&公益</td>
-                		<td width="20%" height="20" style="color:red;">校内</td>
-                		<td width="20%" height="20" style = "color:red;">娱乐</td>  
-			</tr>
-			<tr><td width="20%" valign="top">
-        <dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html" target="_blank">书签维护</a?
->       <dt><a href="http://kingofhevil.github.io/pages/bookmarks.html" target="_blank">书签</a>
-	<dt><a href="http://localhost:8081/math.jnu.edu.cn" target="_blank">math.jnu.edu.cn</a>
-	<dt><a href="http://localhost:8081/math.jnu.edu.cn/login.jsp" target="_blank">login.jsp</a>
+	<div id="block1">
+		<table align="center" width="1300" height="auto" border="1" bordercolor="#0000CC">
+			<tbody>        			
+				<tr>
+					<td width="20%" height="20" style = "color:red;">技术</td>
+					<td width="20%" height="20" style = "color:red;">文档</td>
+					<td width="20%" height="20" style="color:red;">工作&公益</td>
+                	<td width="20%" height="20" style="color:red;">校内</td>
+                	<td width="20%" height="20" style = "color:red;">娱乐</td>  
+				</tr>
+				<tr>
+					<td width="20%" valign="top">
+		<dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html" target="_blank">书签维护</a?>
+		<dt><a href="http://kingofhevil.github.io/pages/bookmarks.html" target="_blank">书签</a>
+		<dt><a href="http://localhost:8081/math.jnu.edu.cn" target="_blank">math.jnu.edu.cn</a>
+		<dt><a href="http://localhost:8081/math.jnu.edu.cn/login.jsp" target="_blank">login.jsp</a>
         <dt><a href="http://www.baidu.com/" target="_blank">百度</a>
         <dt><a href="https://github.com/Kingofhevil" target="_blank">GitHub</a>
         <dt><a href="https://www.google.com/" target="_blank">Google</a>
@@ -97,9 +110,9 @@
         <dt><a href="http://k-judy.github.io/" target="_blank">judy的书签</a>
         <dt><a href="http://Jonnychen.github.io/" target="_blank">国强的书签</a>
         <dt><a href="http://tracyking.github.io/" target="_blank">tracy的书签</a>
-                		</td>
+					</td>
                 		
-                		<td width="20%" valign="top">
+                	<td width="20%" valign="top">
         <dt><a href="http://docs.oracle.com/javase/7/docs/api/" target="_blank">javase-7-docs-api</a>  
         <dt><a href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.5/docs/servlet-2_5-mr2/" target="_blank">javax.servlet-api</a>
         <dt><a href="http://struts.apache.org/maven/struts2-core/apidocs/index.html" target="_blank">struts-2-core-2.3.20-api</a>
@@ -287,13 +300,12 @@
         		</td>
        		</tr>
         
-          	<tr height="50">
-            		<td colspan="5" align="center">
-              		<font color="#FFFFFF">by Shi Chengchuan
-              		</td>
-          	</tr>
         </tbody>
     </table>
-</div>
+	</div>
+	<hr/>
+	<div id="tail">
+		<p align="center">CopyRight 2015 Csharp</p>
+	</div>
 </body>
 </html>

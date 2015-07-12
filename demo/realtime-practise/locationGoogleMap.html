@@ -2,9 +2,6 @@
 <html>
 <head>
 <title>locationGoogleMap</title>
-</head>
-
-<body>
   <script>
   // Return a newly created <img> element that will (once geolocation succeeds)
 // be set to display a Google map of the current location. Note that the caller
@@ -43,6 +40,13 @@ function getmap() {
         image.src = url;
     }
 }
-    </script>
-  </body>
+  </script>
+</head>
+
+<body>
+<h1>Get location by Google Map</h1>
+<br/>
+<br/>
+<button type="button" onclick="getmap()">Try it</button>
+</body>
 </html>

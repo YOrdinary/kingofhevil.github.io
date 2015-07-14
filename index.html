@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv=“content-type" content="text/html;charset=utf-8"/>
@@ -6,21 +6,27 @@
 </head>
 
 <body>
-  <h1>纯练习</h1>
-<script>
-  document.write("<h1>城川哥哥</h1>");
-
-document.alert("找川哥要密码！！");
-var pwd = document.prompt("密码：");
-if(pwd == "ilovescc"){
-  document.getElementById("h1001").innerHTML='<a href="http://kingofhevil.github.io/pages/bookmarks.html" target="_blank">	
-	If you love me, please tell me!!
-     </a>';
-}
-</script>
-
-<h1 id = "h1001" align="center">
-</h1>
+  <script>
+    alert("找川哥要密码！！");
+    var pwd = prompt("密码：");
+    if(pwd == "ilovescc"){
+      document.getElementById("h1001").innerHTML='<a href="http://kingofhevil.github.io/pages/bookmarks.html" target="_blank">	
+	    If you love me, please tell me!!
+      </a>';
+    }
+  </script>
+  <h1 id = "h1001" align="center">
+  </h1>
+  <h1 id="h1002">纯练习</h1>
+  <script>
+    document.write("<h1>城川哥哥</h1>");
+    function f001(){
+      var var001 = document.getElementById("h1001");
+      var001.innerHTML("找到元素，改变内容!");
+    }
+  </script>
+  <button type="button" onclick="alert('What are all these kissings worth if thou kiss not me?')">点我一下</button>
+  <button type="button" onclick="f001()">找到id=h1002的元素，改变它的内容</button>
 
 </body>
 </html>

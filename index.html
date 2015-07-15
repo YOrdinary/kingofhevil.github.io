@@ -3,62 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <title>Csharp</title>
-  <script>
-     function f001(){
-      var001 = document.getElementById("h1002");
-      var001.innerHTML="找到元素，改变内容!";
-    }
-	
-	function f002(){
-		var var002 = document.getElementById("input001").value;
-		if(var002==""||isNaN(var002)){
-		  alert("你输入的不是数字！！！");
-		}		
-	}
-	
-    function changeImg(){
-	  elt = document.getElementById("img001");
-	  if(elt.src.match("bulbon")){
-		elt.src = "/pages/pictures/005.jpg";
-	  }
-	  else{
-		elt.src = "/pages/pictures/003.png";
-	  }
-	 }
-	 
-	 function f003(){
-		document.write("在函数里调用document.write(),会导致整个文档被覆盖！！！");
-	 }
-	 
-	 function f004(){
-		try{
-			addlert("Hello world!!");
-		}
-		catch(err){
-			var txt = "";
-			txt = "这里出了个错误！"+"\n\n";
-			txt = txt + "错误信息："+err.message+"\n\n";
-			alert(txt);
-		}
-	 }
-	 
-	 function f005(){
-		try{
-			var var003 = document.getElementById("input002").value;
-			if(var003=="") throw "啥也没输入";
-			if(isNaN(var003)) throw "输入的不是数字！";
-			if(var003>10) throw "输入的不能大于10！";
-			if(var003<5) throw "输入的不能小于5！！";
-		}
-		catch(err){
-			var xx = document.getElementById("mess");
-			xx.innerHTML = "ERROR:"+err;
-		}
-	 }
-  </script>    
 </head>
-
-<body>
+<body>  
+  <hr/>
   <script>
     alert("找川哥要密码！！");
     var pwd = prompt("密码：");
@@ -66,35 +13,5 @@
       document.write("<h1>If you love me, pelase tell me!!!<h1>");      
     }
   </script>
-  
-  
-  <h1 id = "h1001" align="center">
-  </h1>
-  <h1 id="h1002">纯练习</h1>
-  <script>
-    document.write("<h1>城川哥哥</h1>");
-  </script>
-  
-  
-  <button type="button" onclick="alert('What are all these kissings worth if thou kiss not me?')">点我一下</button>
-  <br/>
-  <button type="button" onclick="f001()">找到id=h1002的元素，改变它的内容</button>
-  <br/>
-  <img id="img001" width = "60px" height = "60px" onclick = "changeImg()" src="pages/pictures/005.jpg">
-
-
-  <p>如果输入不是数字，浏览器将弹出提示框</p>
-  <input id="input001" type="text">
-  <button type="button" onclick="f002()">确定</button>
-
-  <button type="button" onclick="f003()">在函数里写document.write()</button>	
-  <p><button type="button" onclick="f004()">错误捕获</button></p>
-  
-  
-  <input id="input002" type="text"></input>
-  <button type="button" onclick="f005()">抛出异常（输入5-10）</button>
-  <button id = "mess"></button>
-  
-  
 </body>
 </html>

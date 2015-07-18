@@ -2,10 +2,33 @@
 <head>
 <meta charset="utf-8">
 <title>dejoDemoThemes</title>
-<script type="text/javascript" src="dojox/mobile/deviceTheme.js"></script>
+<script src="http://lib.sinaapp.com/js/dojo/1.8.3/dojo.js"></script>
 <head>
 
 <body>
-  <h1 align="center">dojoDemoThemes</hi>
+  <h1 align="center">dojoDemoThemes</h1>
+  <ol>
+    <li>DB</li>
+	<li>Java</li>
+	<li>html/css/js</li>
+  </ol>
+  
+  <ul id="ul001">
+    <li>html</li>
+	<li>css</li>
+	<li>js</li>
+  </ul>
+  <script>
+  dojo.addOnLoad(function(){
+    dojo.create(
+	  "div",
+	  {
+	  "innerHTML":"This is created by dojo"
+	  },
+	  dojo.body()
+	);
+  });
+  </script>
+	
 </body>
 </html>

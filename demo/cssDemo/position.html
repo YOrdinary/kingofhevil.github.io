@@ -3,17 +3,47 @@
 <head lang="zh-CN">
   <meta charset="utf-8">
   <title>position</title>
+  <style>
+    body{
+	  margin: 0;
+	  background-color: yellow;
+	}	  
+	div.div001 {
+	  background-color: blue;
+	  width: 100%;
+	  height: 100%;
+	}	  
+    img.img001 {
+	  position: fixed;
+      width:100%;
+      height:100%;	  
+      top:0;
+      left:0;
+      z-index:-1;	  
+	}
+	img.img002 {
+	  position:relative;
+	  top:400px;
+	  left:800px;
+	}
+	h1.h1001 {
+	position:absolute;
+	top:400px;
+	left:400px;
+	}
+	
+  </style>
 </head>
 
-<body>
-  <div 
-    style="
-      width:100%;
-      height:100%;
-      background-color:red;>
-    <img src="../../pages/pictures/
+  <body>
+    <div class="">
+      <img class="img001" src="../../pages/pictures/009.jpg">
+	  <img class="img002" src="../../pages/pictures/eg_cute.gif">
+	  <h1 class="h1001">
+        绝对定位
+	  </h1>
+	  <h1 class="h1001">西风参照，汉家陵厥</h1>
   
-  </div>
-  
+    </div>  
   </body>
 <html>

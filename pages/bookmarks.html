@@ -1,328 +1,326 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>书签  by城川哥哥</title>
-<style type="text/css">
-	#nav{		
-		position:fixed;
-		z-index:2;
-		top:0px;
-		height:40px;
-		left:0px;
-		right:0px;
-		background-color:blue;
-		border:solid red 3px;
-	}
-	#block1{		
-		position:absolute;
-		z-index:1;
-		top:50px;
-		left:0px;
-		right:0px;
-		height: auto;
-		background-image: url(pictures/001.jpg);
-		overflow:auto;
-	}
-	#tail{
-		postion:absolute;
-		z-index:3;
-		left:0px;
-		right:0px;
-		height:30px;
-		background-color:blue;
-	}
-	a:hover {
-	  font-size:200%;	
-	}
-</style>
-</head> 
-
-<body link="#FFFFFF" alink="#FFFFFF" vlink="#FFFFFF" bgcolor="#000000">
-	<div id="nav">
-		<p align="center" style="text-shadow:3px 3px 1px #888">
-			城川哥哥的书签
-			<a href="https://github.com/Kingofhevil/kingofhevil.github.io/issues/1" target="_blank"> 给我留言</a>
-		</p>
-	</div>
-	<hr/>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <base target="_blank">
+    <title>云书签</title>    
+    <style type="text/css">
+      * {        
+        margin:0px;
+        padding:0px;
+      }
+      a:link,a:visited {
+        display:block;
+        color:#FFF;
+        text-decoration:none;        
+      }
+      a:hover,a:active {
+        background-color:#cc0000;
+      }
+      #csharp {
+        background-color:#000;
+        width:100%;
+        height:1500px;
+        position:absolute;                
+        z-index:-1;
+        font-style:
+      }
+      #csharp div {
+        width:20%;
+        float:left;
+        height:1500px;
+      }
+      #csharp div h1 {
+        color:red;
+      }
+      #csharp div ul {
+        list-style-type:none;
+      }
+      #csharp div ul li {
+        text-indent:40px;
+      }
+      #judy {
+        width:100%;
+        height:700px;
+        position:absolute;
+        top:1500px;
+        z-index:-1;
+      }      
+    </style>  
+  </head>
   
-	<div id="block1">
-		<table align="center" width="1300" height="auto" border="1" bordercolor="#0000CC">
-			<tbody>        			
-				<tr>
-					<td width="20%" height="20" style = "color:red;">技术</td>
-					<td width="20%" height="20" style = "color:red;">文档</td>
-					<td width="20%" height="20" style="color:red;">工作&公益</td>
-                	<td width="20%" height="20" style="color:red;">校内</td>
-                	<td width="20%" height="20" style = "color:red;">娱乐</td>  
-				</tr>
-				<tr>
-					<td width="20%" valign="top">
-		<dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html" target="_blank">书签维护</a?>
-		<dt><a href="http://kingofhevil.github.io/pages/bookmarks.html" target="_blank">书签</a>
-		<dt><a href="http://localhost:8081/math.jnu.edu.cn" target="_blank">math.jnu.edu.cn</a>
-		<dt><a href="https://www.google.com/" target="_blank">Google</a>
-        <dt><a href="http://www.baidu.com/"target="_blank">百度</a>
-		<dt><a href="https://github.com/Kingofhevil"target="_blank">Kingofhevil</a>		
-        <dt><a href="https://github.com/"target="_blank">GitHub</a>
-        	<dt><a href="https://en.wikipedia.org/wiki/Main_Page"target="_blank">wikipedia</a>
-		<dt><a href="http://search.maven.org/" target="_blank">Central Repository</a>
-		<dt><a href="http://projects.spring.io/spring-framework/" target="_blank">Spring Framework</a>
-		<dt><a href="http://hibernate.org/orm/"target="_blank">Hibernate Orm</a>
-		<dt><a href="http://struts.apache.org/"target="_blank">Struts</a>
-		<dt><a href="https://www.playframework.com/"target="_blank">Play Framework</a>
-		
-		<dt><a href="http://jquery.com/"target="_blank">jQuery</a>		
-		<dt><a href="http://www.bootcss.com/"target="_blank">Bootstrap</a>
-		<dt><a href="http://dojotoolkit.org/"target="_blank">dojo</a>		
-		<dt><a href="http://maven.apache.org/" target="_blank">Maven</a>
-		<dt><a href="http://www.mysql.com/" target="_blank">MySQL</a>
-		<dt><a href="http://tomcat.apache.org/" target="_blank">Tomcat</a>
-		<dt><a href="https://nodejs.org/" target="_blank">Node.js</a>
-		<dt><a href="http://firefox.com.cn" target="_blank">Firefox</a>
-		<dt><a href="http://www.microsoft.com/en-us/" target="_blank">microsoft</a>
-		
-		
-		<dt><a href="http://www.w3.org/" target="_blank">w3.org</a>
-		<dt><a href="http://www.unicode.org/" target="_blank">unicode</a>
-		<dt><a href="http://tortoisesvn.net/" target="_blank">TortoiseSVN</a></dt>
-        <br/>
-		<br/>
-        <dt><a href="http://www.mvnrepository.com/" target="_blank">mvnrepository</a>        
-        <dt><a href="http://bbs.csdn.net/home" target="_blank">CSDN</a>
-        <dt><a href="http://www.zhihu.com/question/28260522" target="_blank">牛站推荐</a>
-        <dt><a href="http://www.itheima.com/" target="_blank">黑马程序员</a>
-        <dt><a href="http://www.codecademy.com/zh/learn" target="_blank">Codecademy</a>
-        <dt><a href="http://gac.codeplex.com/" target="_blank">codeplex</a>
-        <dt><a href="http://vbird.dic.ksu.edu.tw/" target="_blank">鸟哥私房菜简体中文版</a>
-        <dt><a href="http://www.w3school.com.cn/html/html_basic.asp" target="_blank">W3School</a>
-        <dt><a href="https://developers.google.com/glass/develop/overview" target="_blank">Google Developers</a>
-        <dt><a href="http://www.365testing.com/bbs/forum.php" target="_blank">365testing</a>
-        <dt><a href="http://www.google.com/glass/start/" target="_blank">Google Glass</a>
-        <dt><a href="http://code.google.com/codejam/apactest" target="_blank">Code Google</a>
-        <dt><a href="http://www.cjsdn.net/Doc/JDK60/index.html?overview-summary.html" target="_blank">API 中文</a>
-        <dt><a href="http://docs.oracle.com/javase/6/docs/api/" target="_blank">API  英文</a>
-        <dt><a href="http://sourceforge.net/" target="_blank">sourceforge</a>
-        <dt><a href="https://www.livecoding.tv/" target="_blank">LiveCoding</a>
-        <dt><a href="http://www.mysql.com/" target="_blank">mysql</a>
-        <dt><a href="http://www.kekenet.com/" target="_blank">可可英语</a>
-        <dt><a href="http://www.zhengjicn.com/" target="_blank">征集网</a>
-        <dt><a href="http://www.pudn.com/" target="_blank">程序员联合开发网</a>
-        <dt><a href="https://mail.google.com/mail/#inbox" target="_blank">Gmail</a>
-        <dt><a href="http://bbs.bccn.net/" target="_blank">编程论坛</a>
-        <dt><a href="http://www.aa25.cn/special/10day/index.shtml" target="_blank">DIV+CSS</a>
-        <dt><a href="http://yun.baidu.com/share/home?uk=87687223#category/type=0&qq-pf-to=pcqq.c2c" target="_blank">屁屁踢模版</a>
-        <dt><a href="http://www.ilovematlab.cn/forum.php" target="_blank">M1</a>
-        <dt><a href="http://www.matlabsky.com/" target="_blank">M2</a>
-        <dt><a href="http://www.oracle.com/technetwork/java/index.html" target="_blank">Oracle </a>
-        <dt><a href="http://www.towords.com/" target="_blank">拓词</a>
-        <dt><a href="http://www.sciencenet.cn/mathematics/" target="_blank">科学网</a>
-        <dt><a href="http://www.cnki.net/" target="_blank">中国知网</a>
-        <dt><a href="http://nianjian.xiaze.com/" target="_blank">夏泽网-中国统计年鉴</a>
-        <dt><a href="http://www.highwire.stanford.edu/" target="_blank">HighWire</a>
-        <dt><a href="http://www.sciencedirect.com/" target="_blank">ScienceDirect</a>
-        <dt><a href="http://ieeexplore.ieee.org/Xplore/dynhome.jsp?tag=1" target="_blank">IEEE Library</a>
-        <dt><a href="http://onlinelibrary.wiley.com/" target="_blank">Wiley Online Library</a>
-        <dt><a href="http://www.nature.com/" target="_blank">Nature </a>
-        <dt><a href="http://nodexl.codeplex.com/" target="_blank">NodeXL</a>
-        <dt><a href="http://linux.vbird.org/" target="_blank">vbird</a>
-        <dt><a href="http://zzk.cnblogs.com/">找找看 - 博客园</a>
-        <dt><a href="http://www.zhihuishi.com/default.aspx" target="_blank">智慧石</a>
-        <dt><a href="http://shenfeng.me/" target="_blank">沈峰</a>
-        <dt><a href="http://k-judy.github.io/" target="_blank">judy的书签</a>
-        <dt><a href="http://Jonnychen.github.io/" target="_blank">国强的书签</a>
-        <dt><a href="http://tracyking.github.io/" target="_blank">tracy的书签</a>
-					</td>
-                		
-                	<td width="20%" valign="top">
-        <dt><a href="http://docs.oracle.com/javase/7/docs/api/" target="_blank">javase-7-docs-api</a>  
-        <dt><a href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.5/docs/servlet-2_5-mr2/" target="_blank">javax.servlet-api</a>
-        <dt><a href="http://struts.apache.org/maven/struts2-core/apidocs/index.html" target="_blank">struts-2-core-2.3.20-api</a>
-        <dt><a href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/" target="_blank">Hibernate-4.3.10.Final</a>
-        <dt><a href="http://docs.spring.io/spring/docs/4.1.7.RELEASE/javadoc-api/" target="_blank">Spring-4.1.7.RELEASE</a>
-        <dt><a href="http://dojotoolkit.org/api/" target="_blank">dojo-api</a>
-		<dt><a href="http://kingofhevil.github.io/pages/frontEndCloudLib.html" target="_blank">fronEndCloudLib</a>		
-		<br/>
-		<br/>
-        <dt><a href="http://w3school.com.cn/html/index.asp" target="_blank">w3-html</a>
-        <dt><a href="http://w3school.com.cn/css/index.asp" target="_blank">w3-css</a>
-        <dt><a href="http://w3school.com.cn/js/index.asp" target="_blank">w3-js</a>
-        <dt><a href="http://w3school.com.cn/jquery/index.asp" target="_blank">w3-jq</a>
-        <dt><a href="http://w3school.com.cn/html5/index.asp" target="_blank">w3-html5</a>
-        <dt><a href="http://developer.baidu.com/map/index.php?title=jspopular" target="_blank">baiduMapAPI</a>
-        <dt><a href="http://fex.baidu.com/ueditor/" target="_blank">ueditor</a>
-        <br/>
-		<br/>
-        <dt><a href="http://www.w3.org/TR/html/" target="_blank">html5</a>        
-        <dt><a href="http://www.w3.org/html/wg/drafts/html/master/Overview.html" target="_blank">html5(office?)</a>
-        <dt><a href="http://diveintohtml5.info/" target="_blank">DIVE INTO HTML5</a>
-        <dt><a href="http://dev.w3.org/html5/html-author/" target="_blank">html5(simple)</a>
-		<dt><a href="http://docs.jboss.org/hibernate/orm/4.2/devguide/en-US/html/" target="_blank">hibernate</a>
-		<dt><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/" target="_blank">spring</a>
-		<dt><a href="http://stamen.iteye.com/blog/1497981" target="_blank">spring入门</a>
-		<dt><a href="http://www.bootcss.com/" target="_blank">Bootstrap</a>
-		<dt><a href="http://dev.mysql.com/doc/refman/5.7/en/" target="_blank">mysql</a>
-		<dt><a href="http://tomcat.apache.org/tomcat-8.0-doc/index.html" target="_blank">tomcat</a>
-		<dt><a href="http://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html" target="_blank">Dojo Mobile</a>
-		<dt><a href="http://mp.weixin.qq.com/wiki/home/index.html" target="_blank">微信公众平台开发者文档</a>
-		<br/>
-		<br/>
-        <dt><a href="http://www.w3.org/standards/techs/css#w3c_all" target="_blank">CSS</a>
-        <dt><a href="http://www.w3.org/standards/techs/js#w3c_all" target="_blank">JavaScript</a>  
-        <dt><a href="https://v2ex.com/" target="_blank">v2ex</a>
-        <br>       
-        <br>
-        <dt><a href="http://asmallorange.com/" target="_blank">asmallorange</a>
-        <dt><a href="http://www.dailyrazor.com/" target="_blank">dailyrazor</a>
-        <dt><a href="http://www.lunarpages.com/" target="_blank">lunarpages</a>
-        <br>
-        <br>
-        <dt><a href="https://www.disability.gov/scholarships-specifically-students-disabilities/" target="_blank">scholarship</a>
-        <dt><a href="http://edition.cnn.com/2010/TECH/02/09/deaf.internet.captions/index.html" target="_blank">Ken Harrenstein</a>
-        <dt><a href="http://www.urbandictionary.com/" target="_blank">urbandictionary</a>        
-        <br/>
-        <br/>        
-        <dt><a href="http://kingofhevil.github.io/demo/jsexamples/01.01.loancalc.html" target="_blank">JSdemo</a>
-        <dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/tree/master/demo/jsexamples" target="_blank">JSresource</a>
-        <br/>               
-        <br/>
-        <br/>        
-        <dt><a href="https://msdn.microsoft.com/zh-cn/default.aspx" target="_blank">msdn.microsoft</a>
-        <dt><a href="https://developer.mozilla.org/zh-CN/" target="_blank">developer.mozilla</a>
-        <dt><a href="https://developer.apple.com/" target="_blank">developer.apple</a>       
-        
-                		</td>
-        
- 				<td width="20%" valign="top">
-        <dt><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/index.html" target="_blank">主页维护</a>
-        <dt><a href="http://kingofhevil.github.io/" target="_blank">主页</a>
-        <dt><a href="http://www.google.cn/intl/zh-CN/about/careers/" target="_blank">Google Career</a>
-        <dt><a href="http://campus.dajie.com/campusIndex" target="_blank">大街网</a>
-        <dt><a href="http://www.diaochapai.com/report/ec8d17d0-1e34-459c-a268-46052e61f8b6" target="_blank">调查派</a>
-        <dt><a href="http://www.diaochapai.com/survey1385082/" target="_blank">谷歌眼镜问卷</a>
-        <dt><a href="http://www.sojump.com/jq/5238651.aspx" target="_blank">回收平台问卷</a>
-        <dt><a href="http://webmail.pactera.com/" target="_blank">内邮</a>
-        <dt><a href="http://hub.pactera.com/" target="_blank">内网</a>
-        <dt><a href="http://www.pactera.com/" target="_blank">官网</a>
-        <dt><a href="http://www.peice.com.cn/test" target="_blank">测试</a>
-        <dt><a href="http://221.228.242.214:8111/olat7711/dmz/" target="_blank">软技能学习平台</a>
-        <dt><a href="http://www.hsbc.com.cn/1/2/" target="_blank">HSBC</a>
-        <dt><a href="http://www.51job.com/default.php" target="_blank">前程无忧</a>
-        <dt><a href="http://campus.chinahr.com/seeker/mycampus/index.asp" target="_blank">中华英才</a>
-        <dt><a href="http://xiaoyuan.zhaopin.com/" target="_blank">智联</a>
-        <dt><a href="http://xyzp.haitou.cc/" target="_blank"> 海投</a>
-        <dt><a href="http://campus.51job.com/2013/ibm/intern2.htm" target="_blank">IBM</a>
-        <dt><a href="http://campus.alibaba.com/process.htm" target="_blank">阿里</a>
-        <dt><a href="http://career.huawei.com/recruitment/portal_index.html" target="_blank">华为</a>
-        <dt><a href="http://talent.baidu.com/component1000/corp/baidu/html/intro.html" target="_blank">百度</a>
-        <dt><a href="http://www.kanzhun.com/gs.html?ka=head-com" target="_blank">看准网</a>
-        <dt><a href="www.scqcp.com" target="_blank">四川汽车票务网</a>
-        <dt><a href="http://www.jobui.com/" target="_blank">职友集</a>
-        <dt><a href="http://www.clpx.org.cn/index.asp" target="_blank">广州市残疾人职业培训中心</a>
-        <dt><a href="http://www.gdltax.gov.cn/portal/gdsite/index.htm" target="_blank">广东地税</a>
-        <dt><a href="http://www.xuechunyu.com/" target="_blank">学唇语网</a>
-        <dt><a href="http://www.cdpsn.org.cn/index.htm" target="_blank">中国残疾人服务网</a>
-        <dt><a href="http://www.cdpf.org.cn/" target="_blank">中国残疾人联合会</a>
-        <dt><a href="http://www.scdpf.org.cn/" target="_blank">四川省残疾人联合会</a>
-        <dt><a href="http://www.leshan.gov.cn/site/sitecanlian/Index.aspx" target="_blank">乐山市残疾人联合会</a>
-        <dt><a href="http://www.canyoucn.com/index.asp?bianhao=7" target="_blank">残友集团</a>
-        <dt><a href="http://bbs.cndeaf.com/?nogroups" target="_blank">聋人在线</a>
-        <dt><a href="http://www.jw.org/zh-hans/" target="_blank">耶和华见证人</a>
-        <dt><a href="http://www.uisdc.com/" target="_blank">优设</a>
-        <dt><a href="http://www.cubrid.org/blog/tags/Java/" target="_blank">CUBRID</a>
-        <dt><a href="http://www.jnu.edu.cn/jnu2014/content.asp?newsPath=1/W_5037_3b0cc7df858c493499f1e643bd4868ef" target="_blank">校内通知：档案相关</a>
-        <dt><a href="http://pan.baidu.com/disk/home" target="_blank">百度云</a>
-        
-        			</td>
- 				<td width="20%" valign="top">
-        <dt><a href="http://www.jnu.edu.cn/" target="_blank">暨南大学</a>
-        <dt><a href="http://202.116.0.176/" target="_blank">教务处</a>
-        <dt><a href="http://202.116.13.244/patroninfo~S1*chx/1067458/items" target="_blank">图书馆</a>
-        <dt><a href="http://xsc.jnu.edu.cn/default.aspx" target="_blank">学生处</a>
-        <dt><a href="http://www.jnu.edu.cn/jnu2014/article_list.asp?channelID=5037" target="_blank">校内通知</a>
-        <dt><a href="http://study.jnu.edu.cn/webapps/portal/frameset.jsp?tab_id=_1_1" target="_blank">教学资源</a>
-        <dt><a href="http://portal.jnu.edu.cn/" target="_blank">暨大个人中心</a>
-        <dt><a href="http://cet.jnu.edu.cn/cet/default_0.htm" target="_blank">四六级网上报名</a>
-        <dt><a href="http://fee.jnu.edu.cn/student.aspx" target="_blank">缴费系统</a>
-        <dt><a href="http://202.116.1.182:9000/Frames/pindex" target="_blank">教学信息门户</a>
-        <dt><a href="http://xxxs.jnu.edu.cn/" target="_blank">信科院学生园地</a>
-        <dt><a href="http://stu.chinacampus.org/" target="_blank">中国大学生网</a>
-        <dt><a href="http://xxxy.jnu.edu.cn/" target="_blank">信科院</a>
-        <dt><a href="http://math.tsinghua.edu.cn/" target="_blank">清华大学数学系</a>
-        <dt><a href="http://math.jnu.edu.cn/" target="_blank">暨南大学数学系</a>
-        <dt><a href="http://jnu.caizhibin.com/" target="_blank">JNU.caizhibin</a>
-        <dt><a href="http://202.116.161.83:8080/gdg2/struts2/toHomepage.action" target="_blank">广东省学位与研究生教育网</a>
-        <dt><a href="http://qgzx.jnu.edu.cn/index.php/infoIntro/index" target="_blank">暨大勤助</a>
-        <dt><a href="http://www.gradjob.com.cn/cms/index.html" target="_blank">广东大学生就业在线</a>
-        <dt><a href="http://my.chsi.com.cn/archive/zxssurvey.action" target="_blank">学信档案</a>
-        <dt><a href="http://career.jnu.edu.cn/" target="_blank">暨大就业指导服务平台</a>
-        <dt><a href="http://www.nanfangrencai.com/" target="_blank">南方人才市场</a>
-        <br/>
-        <br/>
-        <dt><a href="http://edition.cnn.com/" target="_blank">edition.cnn</a>
-        <br/>
-        <br/>
-        <dt><a href="http://202.116.17.176/byxx/login.asp" target="_blank">档案存放</a>
-        <br/>
-        <br/>
-        <dt><a href="http://www.speedtest.net/" target="_blank">speedtest</a>
-        
-        
-                		</td>
-   				<td width="20%" valign="top">
-   	<dt><a href="http://www.zhihu.com/" target="_blank">知乎</a>
-   	<dt><a href="https://www.quora.com/" target="_blank">quora</a>
-   	<dt><a href="https://www.coursera.org/" target="_blank">coursera</a>
-	<dt><a href="http://www.quora.com/Recommended-Users-on-Quora/Whom-should-I-follow-on-Quora-and-why" target="_blank">Recommended Users on Quora</a>
-        <dt><a href="http://www.douban.com/" target="_blank">豆瓣</a>
-        <dt><a href="http://weibo.com/" target="_blank">新浪</a>
-        <dt><a href="https://wx.qq.com/" target="_blank">微信网页版</a>
-        <dt><a href="http://www.apple.com/" target="_blank">Apple</a>
-        <dt><a href="https://plus.google.com/" target="_blank">Google+</a>
-        <dt><a href="https://www.facebook.com/" target="_blank">Facebook</a>
-        <dt><a href="http://www.dytt8.net/" target="_blank">电影天堂</a>
-        <dt><a href="http://www.xuandy.com/" target="_blank">炫电影</a>
-        <dt><a href="http://www.7y7.com/pic/meinv/index_2.html" target="_blank">清纯小美女</a>
-        <dt><a href="http://www.yiyi.cc/" target="_blank">一一影视</a>
-        <dt><a href="http://www.qire123.com/" target="_blank">面包网</a>
-        <dt><a href="http://www.2tu.cc/" target="_blank">迅播影院</a>
-        <dt><a href="http://civdata.com/" target="_blank">文明5设计细节</a>
-        <dt><a href="http://fanqianghou.com/" target="_blank">咳咳咳</a>
-        <dt><a href="https://www.alipay.com/" target="_blank">支付宝</a>
-        <dt><a href="http://www.360buy.com/" target="_blank">京东</a>
-        <dt><a href="http://www.taobao.com/" target="_blank">淘宝</a>
-        <dt><a href="http://www.amazon.cn/" target="_blank">亚马逊</a>
-        <dt><a href="http://www.xiaomi.com/" target="_blank">小米</a>
-        <dt><a href="http://gz.meituan.com/" target="_blank">美团</a>
-        <dt><a href="http://www.icbc.com.cn/icbc/" target="_blank">中国工商银行</a>
-        <dt><a href="http://www.csair.com/cn/index.shtml" target="_blank">南方航空</a>
-        <dt><a href="http://et.airchina.com.cn/cn/index.shtml" target="_blank">国航</a>
-        <dt><a href="http://www.ctrip.com/" target="_blank">携程旅行网</a>
-        <dt><a href="http://www.qunar.com/" target="_blank">去哪儿网</a>
-        <dt><a href="https://kyfw.12306.cn/otn/" target="_blank">新版12306</a>
-        <dt><a href="http://www.youtx.com/room/44987/" target="_blank">林小小家庭旅馆</a>
-        <dt><a href="http://www.nipic.com/index.html" target="_blank">昵图网</a>
-        <dt><a href="http://www.quanjing.com/" target="_blank">全景</a>
-        <dt><a href="http://www.soso.com/" target="_blank">搜搜</a>
-        <dt><a href="http://my.tianya.cn/" target="_blank">天涯</a>
-        <dt><a href="http://blog.ifeng.com/" target="_blank">凤凰</a>
-        <dt><a href="http://bbs.ylmf.net/index.php" target="_blank">雨林木风</a>
-        <dt><a href="http://www.renren.com/" target="_blank">人人</a>
-        <dt><a href="http://www.kuaipan.cn/" target="_blank">金山快盘</a>
-        <dt><a href="http://www.yocity.cn/" target="_blank">旅游名店城</a>
-        <dt><a href="http://www.gamefk.com/" target="_blank">单机游戏</a>
-        <dt><a href="http://www.podvpn6.com/home.php" target="_blank">豆荚</a>
-        <dt><a href="http://gz.meituan.com/shop/4719385?mtt=1.deal%2Fdefault.0.0.i7boa94x" target="_blank">重庆鸡公煲</a>
-        		</td>
-       		</tr>
-        
-        </tbody>
-    </table>
-		<hr/>
-		<div id="tail">
-			<p align="center">CopyRight 2015 Csharp</p>
-		</div>
-	</div>
-</body>
-</html>
+  <body>
+    <div id="csharp">
+      <img src="pictures/wuya.png" style="position:absolute;top:50%;left:50%;z-index:-1;">
+      <div>
+        <h1 align="center">技术</h1>
+        <ul>
+          <li><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html">书签维护</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/bookmarks.html">书签</a></li>
+          <li><a href="http://localhost:8081/math.jnu.edu.cn">math.jnu.edu.cn</a></li>
+          <li><a href="https://www.google.com/">Google</a></li>
+          <li><a href="http://www.baidu.com/">百度</a></li>
+          <li><a href="https://github.com/Kingofhevil">Kingofhevil</a></li>
+          <li><a href="https://github.com/">GitHub</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Main_Page">wikipedia</a></li>
+          <li><a href="http://search.maven.org/">Central Repository</a></li>
+          <li><a href="http://projects.spring.io/spring-framework/">Spring Framework</a></li>
+          <li><a href="http://hibernate.org/orm/">Hibernate Orm</a></li>
+          <li><a href="http://struts.apache.org/">Struts</a></li>
+          <li><a href="https://www.playframework.com/">Play Framework</a></li>
+          <li><a href="http://jquery.com/">jQuery</a></li>
+          <li><a href="http://www.bootcss.com/">Bootstrap</a></li>
+          <li><a href="http://dojotoolkit.org/">dojo</a></li>
+          <li><a href="http://maven.apache.org/">Maven</a></li>
+          <li><a href="http://www.mysql.com/">MySQL</a></li>
+          <li><a href="http://tomcat.apache.org/">Tomcat</a></li>
+          <li><a href="https://nodejs.org/">Node.js</a></li>
+          <li><a href="http://firefox.com.cn">Firefox</a></li>
+          <li><a href="http://www.microsoft.com/en-us/">microsoft</a></li>
+          <li><a href="http://www.w3.org/">w3.org</a></li>          
+          <li><a href="http://www.unicode.org/">unicode</a></li>
+          <li><a href="http://tortoisesvn.net/">TortoiseSVN</a></dt>
+          <li><a href="https://notepad-plus-plus.org/">notepad++</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://www.mvnrepository.com/">mvnrepository</a></li>
+          <li><a href="http://bbs.csdn.net/home">CSDN</a></li>
+          <li><a href="http://www.zhihu.com/question/28260522">牛站推荐</a></li>
+          <li><a href="http://www.itheima.com/">黑马程序员</a></li>
+          <li><a href="http://www.codecademy.com/zh/learn">Codecademy</a></li>
+          <li><a href="http://gac.codeplex.com/">codeplex</a></li>
+          <li><a href="http://vbird.dic.ksu.edu.tw/">鸟哥私房菜简体中文版</a></li>
+          <li><a href="http://www.w3school.com.cn/html/html_basic.asp">W3School</a></li>
+          <li><a href="https://developers.google.com/glass/develop/overview">Google Developers</a></li>
+          <li><a href="http://www.365testing.com/bbs/forum.php">365testing</a></li>
+          <li><a href="http://www.google.com/glass/start/">Google Glass</a></li>
+          <li><a href="http://code.google.com/codejam/apactest">Code Google</a></li>
+          <li><a href="http://www.cjsdn.net/Doc/JDK60/index.html?overview-summary.html">API 中文</a></li>
+          <li><a href="http://docs.oracle.com/javase/6/docs/api/">API  英文</a></li>
+          <li><a href="http://sourceforge.net/">sourceforge</a></li>
+          <li><a href="https://www.livecoding.tv/">LiveCoding</a></li>
+          <li><a href="http://www.mysql.com/">mysql</a></li>
+          <li><a href="http://www.kekenet.com/">可可英语</a></li>
+          <li><a href="http://www.zhengjicn.com/">征集网</a></li>
+          <li><a href="http://www.pudn.com/">程序员联合开发网</a></li>
+          <li><a href="https://mail.google.com/mail/#inbox">Gmail</a></li>
+          <li><a href="http://bbs.bccn.net/">编程论坛</a></li>
+          <li><a href="http://www.aa25.cn/special/10day/index.shtml">DIV+CSS</a></li>
+          <li><a href="http://yun.baidu.com/share/home?uk=87687223#category/type=0&qq-pf-to=pcqq.c2c">屁屁踢模版</a></li>
+          <li><a href="http://www.ilovematlab.cn/forum.php">M1</a></li>
+          <li><a href="http://www.matlabsky.com/">M2</a></li>
+          <li><a href="http://www.oracle.com/technetwork/java/index.html">Oracle </a></li>
+          <li><a href="http://www.towords.com/">拓词</a></li>
+          <li><a href="http://www.sciencenet.cn/mathematics/">科学网</a></li>
+          <li><a href="http://www.cnki.net/">中国知网</a></li>
+          <li><a href="http://nianjian.xiaze.com/">夏泽网-中国统计年鉴</a></li>
+          <li><a href="http://www.highwire.stanford.edu/">HighWire</a></li>
+          <li><a href="http://www.sciencedirect.com/">ScienceDirect</a></li>
+          <li><a href="http://ieeexplore.ieee.org/Xplore/dynhome.jsp?tag=1">IEEE Library</a></li>
+          <li><a href="http://onlinelibrary.wiley.com/">Wiley Online Library</a></li>
+          <li><a href="http://www.nature.com/">Nature </a></li>
+          <li><a href="http://nodexl.codeplex.com/">NodeXL</a></li>
+          <li><a href="http://linux.vbird.org/">vbird</a></li>
+          <li><a href="http://zzk.cnblogs.com/">找找看 - 博客园</a></li>
+          <li><a href="http://www.zhihuishi.com/default.aspx">智慧石</a></li>
+          <li><a href="http://shenfeng.me/">沈峰</a></li>
+          <li><a href="http://k-judy.github.io/">judy的书签</a></li>
+          <li><a href="http://Jonnychen.github.io/">国强的书签</a></li>
+          <li><a href="http://tracyking.github.io/">tracy的书签</a></li>          
+        </ul>
+      </div>      
+      <div>
+        <h1 align="center">文档</h1>
+        <ul>
+          <li><a href="http://docs.oracle.com/javase/7/docs/api/">javase-7-docs-api</a></li>
+          <li><a href="http://docs.oracle.com/cd/E17802_01/products/products/servlet/2.5/docs/servlet-2_5-mr2/">javax.servlet-api</a></li>
+          <li><a href="http://struts.apache.org/maven/struts2-core/apidocs/index.html">struts-2-core-2.3.20-api</a></li>
+          <li><a href="http://docs.jboss.org/hibernate/orm/4.3/javadocs/">Hibernate-4.3.10.Final</a></li>
+          <li><a href="http://docs.spring.io/spring/docs/4.1.7.RELEASE/javadoc-api/">Spring-4.1.7.RELEASE</a></li>
+          <li><a href="http://dojotoolkit.org/api/">dojo-api</a></li>
+          <li><a href="http://kingofhevil.github.io/pages/frontEndCloudLib.html">fronEndCloudLib</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://w3school.com.cn/html/index.asp">w3-html</a></li>
+          <li><a href="http://w3school.com.cn/css/index.asp">w3-css</a></li>
+          <li><a href="http://w3school.com.cn/js/index.asp">w3-js</a></li>
+          <li><a href="http://w3school.com.cn/jquery/index.asp">w3-jq</a></li>          
+          <li><a href="http://w3school.com.cn/html5/index.asp">w3-html5</a></li>
+          <li><a href="http://developer.baidu.com/map/index.php?title=jspopular">baiduMapAPI</a></li>
+          <li><a href="http://fex.baidu.com/ueditor/">ueditor</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://www.w3.org/TR/html/">html5</a></li>        
+          <li><a href="http://www.w3.org/html/wg/drafts/html/master/Overview.html">html5(office?)</a></li>
+          <li><a href="http://diveintohtml5.info/">DIVE INTO HTML5</a></li>
+          <li><a href="http://dev.w3.org/html5/html-author/">html5(simple)</a></li>
+          <li><a href="http://docs.jboss.org/hibernate/orm/4.2/devguide/en-US/html/">hibernate</a></li>
+          <li><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/">spring</a></li>
+          <li><a href="http://stamen.iteye.com/blog/1497981">spring入门</a></li>
+          <li><a href="http://www.bootcss.com/">Bootstrap</a></li>
+          <li><a href="http://dev.mysql.com/doc/refman/5.7/en/">mysql</a></li>
+          <li><a href="http://tomcat.apache.org/tomcat-8.0-doc/index.html">tomcat</a></li>
+          <li><a href="http://dojotoolkit.org/reference-guide/1.10/dojox/mobile.html">Dojo Mobile</a></li>
+          <li><a href="http://mp.weixin.qq.com/wiki/home/index.html">微信公众平台开发者文档</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://www.w3.org/standards/techs/css#w3c_all">CSS</a></li>
+          <li><a href="http://www.w3.org/standards/techs/js#w3c_all">JavaScript</a></li>  
+          <li><a href="https://v2ex.com/">v2ex</a></li>
+          <br>       
+          <br>
+          <li><a href="http://asmallorange.com/">asmallorange</a></li>
+          <li><a href="http://www.dailyrazor.com/">dailyrazor</a></li>
+          <li><a href="http://www.lunarpages.com/">lunarpages</a></li>
+          <br>
+          <br>
+          <li><a href="https://www.disability.gov/scholarships-specifically-students-disabilities/">scholarship</a></li>
+          <li><a href="http://edition.cnn.com/2010/TECH/02/09/deaf.internet.captions/index.html">Ken Harrenstein</a></li>
+          <li><a href="http://www.urbandictionary.com/">urbandictionary</a></li>        
+          <br/>
+          <br/>        
+          <li><a href="http://kingofhevil.github.io/demo/jsexamples/01.01.loancalc.html">JSdemo</a></li>
+          <li><a href="https://github.com/Kingofhevil/kingofhevil.github.io/tree/master/demo/jsexamples">JSresource</a></li>
+          <br/>               
+          <br/>
+          <br/>        
+          <li><a href="https://msdn.microsoft.com/zh-cn/default.aspx">msdn.microsoft</a></li>
+          <li><a href="https://developer.mozilla.org/zh-CN/">developer.mozilla</a></li>
+          <li><a href="https://developer.apple.com/">developer.apple</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">工作&amp;公益</h1>
+        <ul>  
+          <li><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/index.html">主页维护</a></li>
+          <li><a href="http://kingofhevil.github.io/">主页</a></li>
+          <li><a href="http://www.google.cn/intl/zh-CN/about/careers/">Google Career</a></li>
+          <li><a href="http://campus.dajie.com/campusIndex">大街网</a></li>
+          <li><a href="http://www.diaochapai.com/report/ec8d17d0-1e34-459c-a268-46052e61f8b6">调查派</a></li>
+          <li><a href="http://www.diaochapai.com/survey1385082/">谷歌眼镜问卷</a></li>
+          <li><a href="http://www.sojump.com/jq/5238651.aspx">回收平台问卷</a></li>
+          <li><a href="http://webmail.pactera.com/">内邮</a></li>
+          <li><a href="http://hub.pactera.com/">内网</a></li>
+          <li><a href="http://www.pactera.com/">官网</a></li>
+          <li><a href="http://www.peice.com.cn/test">测试</a></li>
+          <li><a href="http://221.228.242.214:8111/olat7711/dmz/">软技能学习平台</a></li>
+          <li><a href="http://www.hsbc.com.cn/1/2/">HSBC</a></li>
+          <li><a href="http://www.51job.com/default.php">前程无忧</a></li>
+          <li><a href="http://campus.chinahr.com/seeker/mycampus/index.asp">中华英才</a></li>
+          <li><a href="http://xiaoyuan.zhaopin.com/">智联</a></li>
+          <li><a href="http://xyzp.haitou.cc/"> 海投</a></li>
+          <li><a href="http://campus.51job.com/2013/ibm/intern2.htm">IBM</a></li>
+          <li><a href="http://campus.alibaba.com/process.htm">阿里</a></li>
+          <li><a href="http://career.huawei.com/recruitment/portal_index.html">华为</a></li>
+          <li><a href="http://talent.baidu.com/component1000/corp/baidu/html/intro.html">百度</a></li>
+          <li><a href="http://www.kanzhun.com/gs.html?ka=head-com">看准网</a></li>
+          <li><a href="www.scqcp.com">四川汽车票务网</a></li>
+          <li><a href="http://www.jobui.com/">职友集</a></li>
+          <li><a href="http://www.clpx.org.cn/index.asp">广州市残疾人职业培训中心</a></li>
+          <li><a href="http://www.gdltax.gov.cn/portal/gdsite/index.htm">广东地税</a></li>
+          <li><a href="http://www.xuechunyu.com/">学唇语网</a></li>
+          <li><a href="http://www.cdpsn.org.cn/index.htm">中国残疾人服务网</a></li>
+          <li><a href="http://www.cdpf.org.cn/">中国残疾人联合会</a></li>
+          <li><a href="http://www.scdpf.org.cn/">四川省残疾人联合会</a></li>
+          <li><a href="http://www.leshan.gov.cn/site/sitecanlian/Index.aspx">乐山市残疾人联合会</a></li>
+          <li><a href="http://www.canyoucn.com/index.asp?bianhao=7">残友集团</a></li>
+          <li><a href="http://bbs.cndeaf.com/?nogroups">聋人在线</a></li>
+          <li><a href="http://www.jw.org/zh-hans/">耶和华见证人</a></li>
+          <li><a href="http://www.uisdc.com/">优设</a></li>
+          <li><a href="http://www.cubrid.org/blog/tags/Java/">CUBRID</a></li>
+          <li><a href="http://www.jnu.edu.cn/jnu2014/content.asp?newsPath=1/W_5037_3b0cc7df858c493499f1e643bd4868ef">校内通知：档案相关</a></li>
+          <li><a href="http://pan.baidu.com/disk/home">百度云</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">校内</h1>
+        <ul>
+          <li><a href="http://www.jnu.edu.cn/">暨南大学</a></li>
+          <li><a href="http://202.116.0.176/">教务处</a></li>
+          <li><a href="http://202.116.13.244/patroninfo~S1*chx/1067458/items">图书馆</a></li>
+          <li><a href="http://xsc.jnu.edu.cn/default.aspx">学生处</a></li>
+          <li><a href="http://www.jnu.edu.cn/jnu2014/article_list.asp?channelID=5037">校内通知</a></li>
+          <li><a href="http://study.jnu.edu.cn/webapps/portal/frameset.jsp?tab_id=_1_1">教学资源</a></li>
+          <li><a href="http://portal.jnu.edu.cn/">暨大个人中心</a></li>
+          <li><a href="http://cet.jnu.edu.cn/cet/default_0.htm">四六级网上报名</a></li>
+          <li><a href="http://fee.jnu.edu.cn/student.aspx">缴费系统</a></li>
+          <li><a href="http://202.116.1.182:9000/Frames/pindex">教学信息门户</a></li>
+          <li><a href="http://xxxs.jnu.edu.cn/">信科院学生园地</a></li>
+          <li><a href="http://stu.chinacampus.org/">中国大学生网</a></li>
+          <li><a href="http://xxxy.jnu.edu.cn/">信科院</a></li>
+          <li><a href="http://math.tsinghua.edu.cn/">清华大学数学系</a></li>
+          <li><a href="http://math.jnu.edu.cn/">暨南大学数学系</a></li>
+          <li><a href="http://jnu.caizhibin.com/">JNU.caizhibin</a></li>
+          <li><a href="http://202.116.161.83:8080/gdg2/struts2/toHomepage.action">广东省学位与研究生教育网</a></li>
+          <li><a href="http://qgzx.jnu.edu.cn/index.php/infoIntro/index">暨大勤助</a></li>
+          <li><a href="http://www.gradjob.com.cn/cms/index.html">广东大学生就业在线</a></li>
+          <li><a href="http://my.chsi.com.cn/archive/zxssurvey.action">学信档案</a></li>
+          <li><a href="http://career.jnu.edu.cn/">暨大就业指导服务平台</a></li>
+          <li><a href="http://www.nanfangrencai.com/">南方人才市场</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://edition.cnn.com/">edition.cnn</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://202.116.17.176/byxx/login.asp">档案存放</a></li>
+          <br/>
+          <br/>
+          <li><a href="http://www.speedtest.net/">speedtest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h1 align="center">娱乐</h1>
+        <ul>
+          <li><a href="http://www.zhihu.com/">知乎</a></li>
+          <li><a href="https://www.quora.com/">quora</a></li>
+          <li><a href="https://www.coursera.org/">coursera</a></li>
+          <li><a href="http://www.quora.com/Recommended-Users-on-Quora/Whom-should-I-follow-on-Quora-and-why">Recommended Users on Quora</a></li>
+          <li><a href="http://www.douban.com/">豆瓣</a></li>
+          <li><a href="http://weibo.com/">新浪</a></li>
+          <li><a href="https://wx.qq.com/">微信网页版</a></li>
+          <li><a href="http://www.apple.com/">Apple</a></li>
+          <li><a href="https://plus.google.com/">Google+</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="http://www.dytt8.net/">电影天堂</a></li>
+          <li><a href="http://www.xuandy.com/">炫电影</a></li>
+          <li><a href="http://www.7y7.com/pic/meinv/index_2.html">清纯小美女</a></li>
+          <li><a href="http://www.yiyi.cc/">一一影视</a></li>
+          <li><a href="http://www.qire123.com/">面包网</a></li>
+          <li><a href="http://www.2tu.cc/">迅播影院</a></li>
+          <li><a href="http://civdata.com/">文明5设计细节</a></li>
+          <li><a href="http://fanqianghou.com/">咳咳咳</a></li>
+          <li><a href="https://www.alipay.com/">支付宝</a></li>
+          <li><a href="http://www.360buy.com/">京东</a></li>
+          <li><a href="http://www.taobao.com/">淘宝</a></li>
+          <li><a href="http://www.amazon.cn/">亚马逊</a></li>
+          <li><a href="http://www.xiaomi.com/">小米</a></li>
+          <li><a href="http://gz.meituan.com/">美团</a></li>
+          <li><a href="http://www.icbc.com.cn/icbc/">中国工商银行</a></li>
+          <li><a href="http://www.csair.com/cn/index.shtml">南方航空</a></li>
+          <li><a href="http://et.airchina.com.cn/cn/index.shtml">国航</a></li>
+          <li><a href="http://www.ctrip.com/">携程旅行网</a></li>
+          <li><a href="http://www.qunar.com/">去哪儿网</a></li>
+          <li><a href="https://kyfw.12306.cn/otn/">新版12306</a></li>
+          <li><a href="http://www.youtx.com/room/44987/">林小小家庭旅馆</a></li>
+          <li><a href="http://www.nipic.com/index.html">昵图网</a></li>
+          <li><a href="http://www.quanjing.com/">全景</a></li>
+          <li><a href="http://www.soso.com/">搜搜</a></li>
+          <li><a href="http://my.tianya.cn/">天涯</a></li>
+          <li><a href="http://blog.ifeng.com/">凤凰</a></li>
+          <li><a href="http://bbs.ylmf.net/index.php">雨林木风</a></li>
+          <li><a href="http://www.renren.com/">人人</a></li>
+          <li><a href="http://www.kuaipan.cn/">金山快盘</a></li>
+          <li><a href="http://www.yocity.cn/">旅游名店城</a></li>
+          <li><a href="http://www.gamefk.com/">单机游戏</a></li>
+          <li><a href="http://www.podvpn6.com/home.php">豆荚</a></li>
+          <li><a href="http://gz.meituan.com/shop/4719385?mtt=1.deal%2Fdefault.0.0.i7boa94x">重庆鸡公煲</a></li>
+        </ul>
+      </div>
+    </div>    
+    <div id="judy">
+      <img src="pictures/dabai.png" style="width:100%;height:100%;">
+      
+    </div>
+  
+  </body>
+</html>	

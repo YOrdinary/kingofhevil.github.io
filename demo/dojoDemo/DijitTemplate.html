@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Dijit Template</title>
+    <link rel="stylesheet" href="css/claro.css"/>
+    <style type="text/css">
+      body, html {
+        font-family:helvetica,arial,sans-serif;
+        font-size:90%;
+      }
+    </style>
+  </head>
+  
+  <body class="claro">
+    <!-- HTML content here -->
+    <div dojoType="dijit._Calendar"></div>
+    <script src="js/dojo.xd.js"djConfig="parseOnLoad: true"></script>
+    <script>
+      dojo.require("dijit.dijit");
+      dojo.require("dijit._Calendar");
+      //Add Dijit components you are using here using dojo.require
+      dojo.addOnLoad(function() {		
+      //JavaScript content here
+      });
+    </script>
+    <hr>
+    
+    <div dojoType="dijit.TitlePane" title="Color Picker">
+      <div dojoType="dijit.ColorPalette"></div>
+    </div>
+    <script>
+      dojo.require("dijit.TitlePane"); 
+      dojo.require("dijit.ColorPalette");
+    </script>
+
+  </body>
+</html>

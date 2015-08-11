@@ -18,22 +18,24 @@
       }
       a:hover,a:active {
         background-color:#cc0000;
-      }      
+      }
+      h1:hover {
+        background-color:#FFDC35;
+      }
       #csharp {
         background-color:#000;
         width:100%;
-        height:1000px;
-        position:absolute;                
-        z-index:-1;
-        font-style:
+        float:left;
       }      
       #csharp div {
+        background-color:#000;
         width:20%;
         float:left;
-        height:1000px;
+        height:auto;
+        z-index:-1;
       }
       #csharp div h1 {
-        color:red;
+        color:red;        
       }
       #csharp div ul {
         list-style-type:none;
@@ -43,27 +45,44 @@
       }
       #judy {
         width:100%;
-        height:1000px;
-        position:absolute;
-        top:1000px;
+        height:auto;
+        background:url("pictures/dabai.png");
         z-index:-1;
+        float:left;
       }
-      #judy a {
-        color:#6600ff;
-        text-indent:80px;
-      }
-      #judy h1 {
+      #judy li {
+        border:none;
+        display:block;
         text-align:center;
+        line-height:100px;
         color:red;
+        height:100px;
       }
-    </style>  
+      #judy .judyblock {
+        
+      }
+      #judy a{
+        display:block;
+        text-indent:40px;
+        color:#00F;
+        text-decoration:none;        
+      }
+    </style>
+    <script>
+      window.onload=function(){
+        var leftheight = document.getElementById("judyleft").offsetHeight;
+        var rightheight = document.getElementById("judyright").offsetHeight;
+        if(leftheight < rightheight){
+          document.getElementById("judyleft").style.height = document.getElementById("judyright").offsetHeight+"px";
+        }
+      }
+    </script>
   </head>
   
   <body>
     <div id="csharp">
-      <img src="pictures/wuya.png" style="position:absolute;top:30%;left:30%;z-index:-1;">
-      <div>
-        <h1 align="center">技术</h1>
+      <div>        
+        <h1 class="listhead" align="center">技术</h1>
         <ul>
           <li><a href="https://github.com/Kingofhevil/kingofhevil.github.io/edit/master/pages/bookmarks.html">书签维护</a></li>
           <li><a href="http://kingofhevil.github.io/pages/bookmarks.html">书签</a></li>          
@@ -317,17 +336,80 @@
         </ul>
       </div>
     </div>    
-    <div id="judy">
-      <img src="pictures/dabai.png" style="position:absolute;width:100%;height:100%;z-index:-1;">
-      <div style="position:absolute;float:left;width:200px;height:100%;background-color:#000079;">
-        <ul>
+    <div id="judy">      
+      <div id="judyleft" style="float:left;width:250px;background-color:#000079;">
+        <ul>          
           <li><h1>买买买</h1></li>
+          <li><h1>工作</h1></li>
+          <li><h1>公益</h1></li>
+          <li><h1>西农</h1></li>
+          <li><h1>旅游</h1></li>
+          <li><h1>英语</h1></li>
+          <li><h1>读书</h1></li>
+          <!--
+          <li><h1>社交</h1></li>
+          <li><h1>宠物</h1></li>
+          <li><h1>在深圳</h1></li>
+          <li><h1>IT</h1></li>
+          <li><h1>工具</h1></li>
+          <li><h1>电商</h1></li>
+          <li><h1>品类</h1></li>
+          <li><h1>淘宝搜索</h1></li>          
+          <li><h1>Excel教程</h1></li>
+          <li><h1>数据分析文章</h1></li>
+          <li><h1>数据公司</h1></li>
+          <li><h1>Midea</h1></li>
+          <li><h1>租房</h1></li>          
+          -->
         </ul>
       </div>
-      
+      <div id="judyright" class="judyblock">
+        <ul>
+          <DL><p>
+                <DT><A HREF="http://shu.taobao.com/top/16/search" ADD_DATE="1429925392">女装 - 指数榜单 - 淘宝指数 - 淘宝消费者数据研究平台</A>
+                <DT><A HREF="http://api.taobao.com/apitools/apiPropTools.htm" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABK0lEQVQ4jZWTv07DMBDGf0bpzBLGSn2DdiBs5QEQa3iCSKiVyFqJnSFrBqpIeQGUNYqY2zELK1ulspGFGSQzGMf5YyP4JMuW7+67785nASD3hWRX8C9chohlKEQbfP+kDOsFPL6YswPN8YC/yfHYFfD2CkhAgDcxXt4E0rofWWXwnONPZzRJhNca4gu1p7VyurpV5zjoE2jCcqt2+XAj5WouW9ydq2VD9341l+/Xp/LEWuAwcxyMlfzAEKwXSrqW2K09rce90G2y3upsOsiRva8AVOPiwJ7NocAQ6Le3wREMuoRu8NdnvxdgBkr7VdmAYOhYbs07DxNUWc8m5L6QTRLhT2fuEizQoyxAfaYmiQBaouZ4+JXA3+SIZShGBj1hf1VincSz8mPM7MA3ERmaQnFl1eEAAAAASUVORK5CYII=">淘宝开放平台 - API属性工具</A>
+                <DT><A HREF="http://shu.taobao.com/" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDElEQVQ4jZWTMVLDMBBFnxL3jCsGiwMwadNB61wkScUduAZVnKHnCFaRBsoUFDmBFQ/MEMHQ2ogiI2GM5Yl/qf37drVaCYBMV/b+dcwQ3Z7XLGQkhEsu380gQKkLVrMJYrq11iXrNOarslxtPtBpDIBUv+D2WakLmG6tTfKDPUWZrrw3yQ9WPLzYyNGlMn8qdHXQpSgUWO9r5snYg9qxXoBOY6Qy3O16i4cBzSt0yQ0aYOQqhhKkMkhlWO/rznmMmiZHb+v55ox50r1owSE2df30GYx5gFuix7dvoP8VnAdAZLqyy3zHhbw8pRkvv8pw/EzL/PhmDlTqohewmk1YyEj8C7gVHdROGzDE/wNui7fyBf6CdwAAAABJRU5ErkJggg==">淘宝指数 - 淘宝消费者数据研究平台</A>
+                <DT><A HREF="http://top.taobao.com/index.php?spm=1.1000386.220544.9.a1c168&#38;38;from=tbsy" ADD_DATE="1429925392">淘宝排行榜&amp;mdash;&amp;mdash;最权威的购物排行榜！</A>
+                <DT><A HREF="http://bangpai.taobao.com/group/400769.htm?spm=0.0.0.38.boqnUg" ADD_DATE="1429925392">淘宝搜索官方帮派 - 淘宝官方 - 淘帮派 - 消费者门户 - 淘宝网</A>
+                <DT><A HREF="http://bbs.taobao.com/?spm=0.0.0.67.ZjwQBB" ADD_DATE="1429925392">淘宝论坛 - 淘宝网</A>
+                <DT><A HREF="http://ying001.cn/index.php?c=user&#38;38;a=login" ADD_DATE="1429925392">鹰眼监控-淘宝数据监控分析专家,知己知彼知天下</A>
+            </DL><p>
+            <DT><A HREF="http://www.taobao.com/" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABK0lEQVQ4jZWTv07DMBDGf0bpzBLGSn2DdiBs5QEQa3iCSKiVyFqJnSFrBqpIeQGUNYqY2zELK1ulspGFGSQzGMf5YyP4JMuW7+67785nASD3hWRX8C9chohlKEQbfP+kDOsFPL6YswPN8YC/yfHYFfD2CkhAgDcxXt4E0rofWWXwnONPZzRJhNca4gu1p7VyurpV5zjoE2jCcqt2+XAj5WouW9ydq2VD9341l+/Xp/LEWuAwcxyMlfzAEKwXSrqW2K09rce90G2y3upsOsiRva8AVOPiwJ7NocAQ6Le3wREMuoRu8NdnvxdgBkr7VdmAYOhYbs07DxNUWc8m5L6QTRLhT2fuEizQoyxAfaYmiQBaouZ4+JXA3+SIZShGBj1hf1VincSz8mPM7MA3ERmaQnFl1eEAAAAASUVORK5CYII=">淘宝网 - 淘！我喜欢</A>
+            <DT><A HREF="http://ele.me/place/ws100sw117d" ADD_DATE="1437029133" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABlklEQVQ4jaWTTUuUURTHf+c8NuMYhi/ZGAiF6SC6EqTZ5UcwFETauPED6MZdSxfB2AcIN4Mwm1QEN5KrFgal0yZByRxULHhE2xSjU849LR57mZcHR/pvDvfPOb9zzr1cAUhmLG64cbBOapLkBE2/fSK+JDMWdxQPgGhtxX9UULx7GnS+djFA1HDjdWFjN9fDw7hwYbDz1fj8vVqWddaVWyow2a+MJgSVwHMGq/vGzDvHT1eaXwGYHlCGu4SlT8arA+P03BhLKI+7BE+Vp29cOODuTRh6IKx/MZ5tOOzSa4qCJ5BoEhoj8O1HCKC3RfAE5rYMA0a6hal+5bwIqaxjcdcoWtnK/x4iXhBvx4J4/5awvGcMrxRZOzRSj5SeFglfYcM3nEGyXXh9ZMxm/+57Q6ExAqdnFg44OYOFXWM0IbTFlBcfjDsN0BqDTd+YWCt7gnIAwPP3DgheYrAjGNeAlx+NVLYGgLPgwua3oa9VqPdg89g4zlfU/gZILuhRKj8Pfr7SL5XkVNA0ULgis5oKgqYF/u87/wIht5OfbB81AgAAAABJRU5ErkJggg==">怡化金融科技大厦附近美食_外卖</A>
+            <DT><A HREF="http://www.yihaodian.com/3/" ADD_DATE="1429925392">1号店,只为更好的生活</A>
+            <DT><A HREF="http://www.asos.com/?hrd=1" ADD_DATE="1429925392">ASOS Shop</A>
+            <DT><A HREF="http://www.amazon.com/" ADD_DATE="1429925392">Amazon.com Online Shopping for Electronics, Apparel, Computers, Books, DVDs &amp; more</A>
+            <DT><A HREF="http://www.saturdayguy.com/" ADD_DATE="1429925392">Designer Fashion Ship Worldwide   SATURDAY GUY</A>
+            <DT><A HREF="http://www.lifevc.com/" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXUlEQVQ4jaXOwQmAMBBE0dlkI6JgNVZoWSIWYCuevIhRyFrEn/t/jC3bHALzqp708qmiXv4UJnhTYcB6XgyQRgaEXvggNQZYGxiQdTPg2FEvz9ExQEoMCDMI6EPAD4HUFNl3WFYoAAAAAElFTkSuQmCC">LifeVC丽芙家居（中国）官方商城</A>
+            <DT><A HREF="http://www.lightinthebox.com/" ADD_DATE="1429925392">LightInTheBox - Global Online Shopping for Dresses, Home &amp; Garden, Electronics, Wedding Apparel</A>
+            <DT><A HREF="http://www.etsy.com/shop/armstreet?page=3" ADD_DATE="1429925392">Medieval Renaissance Fantasy Elven dresses costumes by armstreet</A>
+            <DT><A HREF="http://www.meici.com/mselect?utm_source=weibo_gogoboi&#38;38;utm_medium=pr&38;38;utm_content=1_0729&38;38;utm_campaign=mselect" ADD_DATE="1429925392">M概念店-买手店、品牌集合店，汇聚全球奢侈品精品，就在美西时尚</A>
+            <DT><A HREF="http://www.philips.com.cn/c/" ADD_DATE="1429925392">Philips -官网2</A>
+            <DT><A HREF="http://www.quirky.com/" ADD_DATE="1429925392">Quirky - Shop for products invented by real people like you</A>
+            <DT><A HREF="https://www.kickstarter.com/learn?ref=hero" ADD_DATE="1429925392">Start your project &amp;mdash; Kickstarter</A>
+            <DT><A HREF="http://www.vancl.com/" ADD_DATE="1429925392">VANCL凡客诚品</A>
+            <DT><A HREF="http://www.yohobuy.com//?utm_source=bdcpc&#38;utm_medium=cpc&38;utm_campaign=303" ADD_DATE="1429925392">YOHO!有货</A>
+            <DT><A HREF="http://www.lefeng.com/" ADD_DATE="1429925392">乐蜂网 化妆品</A>
+            <DT><A HREF="http://www.amazon.cn/ref=gno_logo" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABy0lEQVQ4jY2TP2hTURjFf09zM1UbcGmID9xEFEyyCTo1b6uLxuCS1e4Fg4tuIlhczMMti0NwadOho9DNf7wpCCYdDEL7njWgiU87NOBxeGmavryKB+5wv8t3vnPuuRdJaUnPJO3o/7Ez7klbkp4AD5jC9vY2jUaDz70elmVxc2mJarVKAlaRFExTe56n08YoFVu1Wi1JSYCkwXTl3vKyUsao5DjqdDqT/XnbTiIYWJIGwPyhpiAI8H2f4XDIzzCk2WzSarUAGB0cxC0MZxR0u13li8UZCyljEhXMENypVJQyRvliUb7vq+66/yQ4Fdd0KLdcLpPNZmm325OzMAxnc4gryBcKk4klxzmWSN11T7Dw259UPM9TzraVMkY521bddVWuVLToOAq/B/rTeSl9WInWJIXNy/NcX4fMxaTHcoSt2zB3AdIZ+PQI7mqcwu5r6RXS+xUp9OMyj/BrV+qtST860tq52Dv40oJ3t6JJmRuw4IA5CwIsC/a2YG8Drq1H9f4buPpwaEkKgAUA+h58fAzfNqJGxv0Ac5eg8BxyJRiN0zBnvlqSngL3j3kddKH/FkbDiCFzBXKLSbeyiqLv/ELS/snmZ7A/7kn/BXFbL8ajtAhKAAAAAElFTkSuQmCC">亚马逊</A>
+            <DT><A HREF="http://www.360buy.com/" ADD_DATE="1429925392">京东网上商城</A>
+            <DT><A HREF="http://shop.vipshop.com/gz_women.html" ADD_DATE="1429925392">唯品会</A>
+            <DT><A HREF="http://www.tmall.com/" ADD_DATE="1429925392" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZklEQVQ4je2Tuw2AMAxE30VBrMUCTJsFWCuiCBXIpojAaSi4yrJ1H8uyAAo0AlhBKtAmYH5JrsAOJAJky8m2ubRnm2zSVaeAuYNLYJVtonvfYjjBL/AFgdwb9u7vEtSA88kRjL3zAXPMEVrwP5NMAAAAAElFTkSuQmCC">天猫tmall.com-上天猫，就购了</A>
+            <DT><A HREF="http://www.tianxun.cn/" ADD_DATE="1429925392">廉价航班   www.tianxun.cn廉价航班比较</A>
+            <DT><A HREF="http://www.dangdang.com/" ADD_DATE="1429925392">当当网</A>
+            <DT><A HREF="http://www.paipai.com/" ADD_DATE="1429925392">拍拍网 腾讯旗下购物网站</A>
+            <DT><A HREF="http://www.maizuo.com/maizuo.htm?goodsId=468&#38;38;foretellId=1285629&38;38;dateFlag=0" ADD_DATE="1429925392">欢迎订购卖座电影票</A>
+            <DT><A HREF="http://www.demohour.com/" ADD_DATE="1429925392">点名时间 - 中国最大智能新品限时预购网站！智能新品 限时抢购！</A>
+            <DT><A HREF="http://www.mizhe.com/#NEb3ZhTG9vWm92" ADD_DATE="1429925392">米折网-返利省钱第一站!淘宝网购物返利网,天猫商城返现优惠券</A>
+            <DT><A HREF="http://www.meilishuo.com/welcome" ADD_DATE="1429925392">美丽说，发现、收藏、分享我的美丽点滴,让改变发生</A>
+            <DT><A HREF="http://gz.jumei.com/?referer=bdppzq_bt&#38;38;utm_content=title&38;38;utm_source=baidu_ppzq" ADD_DATE="1429925392">聚美优品</A>
+            <DT><A HREF="http://www.suning.com/" ADD_DATE="1429925392">苏宁易购</A>
+            <DT><A HREF="http://www.51fanli.com/" ADD_DATE="1429925392">返利网，网购返利第一站</A>
+            <DT><A HREF="http://www.shop.philips.com.cn/" ADD_DATE="1429925392">飞利浦官网</A>
+            <DT><A HREF="http://cn.dealmoon.com/Up-to-60-Off-Extra-25-Off-Sale-Items-Kate-Spade/427463.html" ADD_DATE="1432527643" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABS0lEQVQ4jY2TvUoDURCFz7kbQrLaWNhoYUxjIYKVDyAIAVt9AsFCVlYUjIVFwASyCpIQsLDxGSyEYOEDpNEmooUxCLG0yo/4k7HY7BI3u3pPOWfmu3Nn7iVC1LCdOQg2lcJbqpQthOV4igUDzZ3iLsA8iF7nozvzV/EvQH09FzenzEsAGTcihfmzXFsbYE4njukXA4Kvq/+KAUABwJNVXKAoa9jotj7vtQEqhg0QxrCRmEgktQEQZkYM83tWH0CMJBOxVX1AiERg17dy41oAAi8jHZCTY/HkhV4Hgmq4zbVn27l+sI4i50HAXaNhqNvgJnyJtAU8kb5U05VsDQAa286SMrBCL6dpOxWQViggQoJ+2R9i57W3J5FXCWsK1W7rfZ9Bw/1MKg8g6iH1gP5hqnRwCgxmEJT3nUkuk1gcnHgnIjcgztPl7KOX+wPOFmLmWxaanQAAAABJRU5ErkJggg==">北美省钱快报 - 低至4折+额外7.5折+包邮 Kate Spade精选时尚手袋、钱夹等折上折</A>
+            <DT><A HREF="http://search.smzdm.com/?c=home&s=kate" ADD_DATE="1432527668" ICON="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAADE0lEQVQ4jU2UTWhddRTEZ87/f29eXr7aNBpigh+xijS0Yltf5bUVoktdSQnoQhHqIi5U3IlislEUEV2GLsQirlyIIlKxgqWSikkwfgQbomhItNHEvHw88vLuveccF5LS2c8wDPyGuEHTg4Nd7O19gGY3Swg3wX1AALgIzezXtCi+/mhq6pdxwPY8BAAH5IdK5SBCGI7k8XKMx+pFsQj3d518J4ocMmBOVS8BuLyztHShurzc2Avg7MmThyzPo4TwWDlJXo0k6qpNbG72obNzgu4rBtQTkdFM9UMA80WWvXdsZqYhANyL4mAI4fhfq6uv76pu76puufu0lss9ZvaGA3NR5D4C+1tiPEuymra0jBDw8OPhw/tbyuXPFVjobG2tSQjPutmbABbM7HeG8HwawpOF+21GtgQyVaCb7mtn+/vXBB0drxxI0z5TnUUIZ7pCECdfpMhYcL81Al80VB//d2NjEEA9N/OSSD9E7gxkVUieXs0y9SybInCP/r9LqWg2q56m9ws5GoCxjlrN4L6SiFDdHcCQhHCLONCTm11oybI1FsXHO6rFgTRNQ5IMQ/XnzH07itxbGhi4S4FvWkVc3QGyDUCfODAv5Eze1TWhIrXC/eJGs/mckUdJbgFYFWBNk2SYql8KqULS3Q1AImo2CfeRUghPEygEKO2oXiWgqnoN7uVyCH+o2fcmshLI6EAOMnX3fgnAlgPtnUliBLrNfSkJ4QmY/RlifFSAqxt5vhvJp4L77X83GqNZllXd7GUCNYnAB05OtomIk3fA7Ksg0kdyQcgzACDAPIDLJHvKMQ7EGF8jMALgfQLAbKVyd1up9FND9ROqjqnI+drm5kM9nZ1HSJ528kGSlZJIT3uM+KfZ/DZXfeu37e3POA7IOGDTlcojaZK8nef5MzHGc5GcU+BUd5r2ujvqqnBgLTf7jsDF+uLiRHV5uXEdJgI2e+LEKYbwQhB5eF+M+9bzvE5g04EagG1zDwTOr09OnhsGius0AsBek7mhoZTt7UfzGF+Cu4vIupmVCFyD+6dHrly5dOMF/Ac884F8jGywYgAAAABJRU5ErkJggg==">kate_优惠精选_什么值得买</A>      
     </div>
     
-    <div style="position:absolute;top:2000px;background-color:#000;color:red;width:100%;">
+    <div style="background-color:#000;color:red;width:100%;">
       <!-- judy的书签，有时间再排版 -->
       <DL><p>
         <DT><h1 ADD_DATE="1429925413" LAST_MODIFIED="0">腾讯</h1>

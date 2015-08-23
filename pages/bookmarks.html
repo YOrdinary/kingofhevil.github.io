@@ -68,13 +68,19 @@
       }
     </style>
     <script>
+      var browserWidth=window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;      
+      var browserHeight=window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;        
       window.onload=function(){
         var leftheight = document.getElementById("judyleft").offsetHeight;
         var rightheight = document.getElementById("judyright").offsetHeight;
         if(leftheight < rightheight){
           document.getElementById("judyleft").style.height = document.getElementById("judyright").offsetHeight+"px";
         }        
-      }
+      }      
       function displayJudyRightBlock(judyRightBlockId){
         document.getElementById(judyRightBlockId).innerHTML="
           哈哈哈";
@@ -181,7 +187,7 @@
           <br>
           <li><a href="http://code.google.com/codejam/apactest">code.google</a></li>
           <li><a href="https://msdn.microsoft.com/zh-cn/default.aspx">msdn.microsoft</a></li>
-          <li><a href="https://developer.mozilla.org/zh-CN/">developer.mozilla</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/">developer.mozilla</a></li>
           <li><a href="https://developer.apple.com/">developer.apple</a></li>
           <li><a href="https://developers.google.com/glass/develop/overview">google.glass.developer</a></li>          
           <br>

@@ -6,6 +6,12 @@
     <title>云书签</title>
     <link rel="apple-touch-icon-precomposed" href="pictures/dabai-apple-touch-icon-precomposed .png">
     <link rel="shortcut icon" href="pictures/dabai-icon.png">
+    <script src="http://lib.sinaapp.com/js/jquery/2.0.3/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript">
+      if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='http://kingofhevil.github.io/dependencies/js/jquery-2.0.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
     <style type="text/css">
       * {        
         margin:0px;
@@ -46,7 +52,9 @@
       #judy {
         width:100%;
         height:auto;
+        position:relative;
         float:left;
+        background:url("pictures/dabai.png")
       }
       #judy li {
         border:none;
@@ -57,8 +65,11 @@
         height:100px;
       }
       #judy .judyblock {
-        z-index:2;
+        position:absolute;        
         font-size:150%;
+        z-index:1;
+        width:75%;
+        height:700px;
       }
       #judy a{
         display:block;
@@ -81,10 +92,12 @@
           document.getElementById("judyleft").style.height = document.getElementById("judyright").offsetHeight+"px";
         }        
       }      
-      function displayJudyRightBlock(judyRightBlockId){
-        document.getElementById(judyRightBlockId).innerHTML="
-          哈哈哈";
-      }
+      $(document).ready(function(){
+        $("#judyWorkLeft").click(function(){
+          $("#judyBuy").hide();
+          $("#judyWork").show();
+        });
+      });
     </script>
   </head>
   
@@ -349,23 +362,22 @@
       </div>
     </div>    
     <div id="judy">      
-      <div id="judyleft" style="float:left;width:250px;background-color:#000079;">
+      <div id="judyleft" style="float:left;width:25%;height:700px;background-color:#000079;">
         <ul>          
-          <li><h1>买买买</h1></li>
-          <li><h1 onclick="displayJudyRightBlock('judyWork')">工作</h1></li>
-          <li><h1>公益</h1></li>
-          <li><h1>西农</h1></li>
-          <li><h1>旅游</h1></li>
-          <li><h1>英语</h1></li>
-          <li><h1>读书</h1></li>
+          <li><h1 id="judyBuyLeft">买买买</h1></li>
+          <li><h1 id="judyWorkLeft">工作帮手</h1></li>
+          <li><h1 id="judyStudyLeft">天天向上</h1></li>
+          <li><h1 id="judyBeautyLeft">奢靡生活</h1></li>
+          <li><h1 id="judyTravelLeft">别走丢了哟</h1></li>
+          <li><h1 id="judyCrazyLeft">丧心病狂</h1></li>
+          <li><h1 id="judyLoveLeft">爱自己</h1></li>
         </ul>
       </div>
-      <div id="judyright" style="background:url("pictures/dabai.png");">
+      <div id="judyright" style="float:left;width:75%;">
         <div id="judyBuy" class="judyblock" style="z-index:1;">
           <a href="http://www.taobao.com/">淘宝</a>
-        
         </div>
-        <div id="judyWork" class="judyblock">          
+        <div id="judyWork" class="judyblock">
           <a href="https://app.yinxiang.com/Home.action">印象笔记</a>
         </div>
       </div>

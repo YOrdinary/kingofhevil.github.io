@@ -1,8 +1,11 @@
-A Personal Website of Kingofhevil
-=================================
+A bookmarks website based on github
+===================================
 
-Good good study, day day up.<br/>
-Thanks.<br />
+It is a static bookmarks website based on github. </br>
+Whenever I want to access my bookmarks, I enter http://s-cc.github.io in an browser.</br>
+It's so convenient, isn't it?</br>
+
+Click to view:<br/>
 
 [点击看效果](https://kingofhevil.github.io/)
 ==========================================================================

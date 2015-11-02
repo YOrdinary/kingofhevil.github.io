@@ -2,7 +2,7 @@ A bookmarks website based on github
 ===================================
 
 It is a static bookmarks website based on github. </br>
-Whenever I want to access my bookmarks, I enter http://s-cc.github.io in an browser.</br>
+Whenever I want to access my bookmarks, I enter http://s-cc.github.io in a browser.</br>
 It's so convenient, isn't it?</br>
 
 Click to view:<br/>

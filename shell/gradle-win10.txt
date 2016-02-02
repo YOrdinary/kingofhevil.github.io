@@ -1,0 +1,24 @@
+cd ProjectRootDirectory
+//切换到项目根目录
+
+gradlew -v
+//查看项目所用Gradle版本，如果是第一次用，会自动从官网下载
+
+gradlew clean
+//下载并并编译Gradle依赖
+
+gradlew build
+//编译并生成相应 apk文件，可以直接下载到手机上安装
+//注意：gradlew build 命令把debug、release环境的包都打出来，如果正式发布只需要打Release的包
+
+gradlew assembleDebug
+//编译并打Debug包
+
+gradlew assembleRelease
+//编译并打Release的包
+
+gradlew installRelease Release
+//模式打包并安装
+
+gradlew uninstallRelease
+//卸载Release模式包

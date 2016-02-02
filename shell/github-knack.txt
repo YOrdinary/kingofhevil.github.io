@@ -1,0 +1,11 @@
+curl -i http://git.io -F 'url=https://github.com/blog/985-git-io-github-url-shortener'
+//短网址
+
+curl -i http://git.io/help
+//查看短网址对应的原网址
+
+curl -i http://git.io -F \
+  'url=https://github.com/cameronmcefee/Image-Diff-View-Modes/commit/8e95f70c9c47168305970e91021072673d7cdad8' \
+  -F 'code=image-diff'
+//为使转换的短网址更易于记忆和识别，可在curl命令中用 code 参数设定期望的短网址。
+

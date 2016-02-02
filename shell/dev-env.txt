@@ -1,0 +1,25 @@
+//确认当前使用的kernel版本号:
+uname -r
+
+//查找当前系统安装的所有kernel:
+rpm -qa | grep kernel | sort
+
+//删除多余的kernel，一般保留一个最新的和一个旧的，以便最新的出故障了可以从旧的那个启动
+sudo yum remove kernel-3.10.0-123.8.1.el7.x86_64
+
+//基础开发环境
+//GCC系列
+sudo yum install gcc                     # C编译器
+sudo yum install gcc-c++                 # C++编译器
+sudo yum install gcc-gfortran            # Fortran编译器
+sudo yum install compat-gcc-44           # 兼容gcc 4.4
+sudo yum install compat-gcc-44-c++       # 兼容gcc-c++ 4.4
+sudo yum install compat-gcc-44-gfortran  # 兼容gcc-fortran 4.4
+sudo yum install compat-libf2c-34        # g77 3.4.x兼容库
+
+//软件开发辅助工具
+sudo yum install make
+sudo yum install gdb     # 代码调试器
+sudo yum install cmake   # Cmake
+sudo yum install git     # 版本控制
+sudo yum install git-svn # git的svn插件

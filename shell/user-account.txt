@@ -1,0 +1,5 @@
+useradd username
+//add a new user
+
+passwd username
+//change a user's password

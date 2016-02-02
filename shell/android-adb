@@ -1,0 +1,5 @@
+android list sdk -a
+//list all android sdk 
+
+android update sdk -a -u -t 3
+// parameters 3 refers the index listed in the output of last command

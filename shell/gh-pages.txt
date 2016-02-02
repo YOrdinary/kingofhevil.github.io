@@ -1,0 +1,14 @@
+//创建项目主页
+
+    git branch gh-pages    //在master分支下面新建一个gh-pages分支  
+
+    git checkout gh-pages    //切换到新建的gh-pages分支  
+
+    git rm -rf .        //由于master分支和gh-pages分支里面的内容完全不同，所以首先清空了所有文件  
+
+    //在清空的文件夹里面自定义新的文件,也就是上面截图中看到的gh-pages分支中的文件  
+
+    git add .    //跟踪自己定义的文件  
+
+    git commit -m "Create gh-pages branch via Github"    //提交本次修改  
+

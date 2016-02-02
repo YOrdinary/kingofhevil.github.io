@@ -1,0 +1,4 @@
+/dev/lp
+//might be the printer. Cause there are two special files: block files and character files.
+//By convention, the special files are kept in the /dev directory.
+

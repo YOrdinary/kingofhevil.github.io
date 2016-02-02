@@ -1,0 +1,90 @@
+//概要
+    为系统添加EPEL源、Nux Dextop、ELRepo源和个别其他小型第三方源
+    能够从源中安装的就从源中安装
+    不能从源中安装的尽量找rpm包安装
+    找不到rpm包的就试试linuxbrew
+    能不手动编译的就不要手动编译
+
+//安装epel源
+sudo yum install epel-release
+执行完该命令后，在/etc/yum.repos.d目录下会多一个epel.repo文件
+
+//安装Nux Dextop源
+sudo rpm -Uvh http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+
+//安装ELRepo源
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-2.el7.elrepo.noarch.rpm
+
+//安装yum-axelget
+//yum-axelget是EPEL提供的一个yum插件。使用该插件后用yum安装软件时可以并行下载，
+//大大提高了软件的下载速度，减少了下载的等待时间:
+sudo yum install yum-axelget
+//安装该插件的同时会安装另一个软件axel。axel是一个并行下载工具，在下载http、ftp等简单协议的文件时非常好用。
+
+//centos7默认使用了4大官方源中的三个
+base upadtes extras
+
+//大型第三方源，已确认不会替换官方源的包，且相互之间无冲突
+EPEL：包含6500多个软件，科研必备
+ELRepo：包含几十个各种硬件的驱动程序
+Nux Dextop：多媒体相关的软件包（与EPEL的个别软件相冲突，可忽略）
+
+//有些小型第三方源，仅包含了几个软件，确认与官方源和EPEL源不会冲突，也可以添加
+Google Chrome：包含了Google Chrome，不会与官方源和EPEL源冲突；
+Adobe：仅包含flash插件，已确认不会冲突；
+dropbox：仅包含dropbox一个软件，已确认不会冲突；
+
+//mosquito-myrepo
+是一个私人维护的源，其中包含了中文输入法、QQ、飞信、为知笔记、有道词典、百度云以及若干音频、视频播放器。
+我对这个源的态度是又爱又恨，其提供了很多中国人需要的软件，但因为其依赖于除EPEL外的其他第三方软件源，
+进而可能导致包冲突。所以对该源的使用，要保持谨慎。
+
+
+//从源码编译软件的一般步骤。通常默认安装目录为：/usr/local
+tar -xvf xxxx.tgz
+./configure --prefix=/opt/xxxx
+make
+sudo make install
+
+//作为一个通过源码编译的软件来说，意味着编译者要完全负起管理该软件的义务
+//所以我总是会在configure的时候加上prefix手动指定安装路径。
+//要卸载该软件就直接删除/opt下对应的目录，要更新的话，也可以先删除，再重新编译一遍。
+//这样做稍微麻烦的一点是，需要手动将该软件的bin目录加入到PATH中，还有可能需要修改LD_LIBRARY_PATH。
+//但是一般来说，需要编译源码的软件很少，所以不会造成太大的麻烦。
+
+
+//有些软件包编译之后实际需要的只是一个二进制文件，这个时候就没有必要安装到/opt了，
+//合适的方式是在自己的HOME下建立bin目录，并将其路径加入到.bashrc 中，
+//然后将编译生成的二进制文件复制到该目录下即可:
+mkdir ${HOME}/bin
+echo 'export PATH=${HOME}/bin:$PATH' >> ~/.bashrc
+
+
+Linuxbrew是由OS X平台下非常流行的Homebrew移植到Linux下的。
+Linuxbrew可以作为系统自带的包管理器的一个补充。其特色在于：
+    所有软件都安装在${HOME}/.linuxbrew目录下；
+    软件的版本相对很新；
+    install、uninstall、info、list、update、upgrade等功能
+    若库中没有需要的软件包，可以很简单地自己创建formulae
+试用了一下，一个比较坑的地方是，linuxbrew会自己内部解决依赖问题。
+比如，我试着通过linuxbrew安装terminator，然后发现terminator依赖于python，
+尽管系统已经安装了python，linuxbrew还是会安装一份python，又由于python依赖于更多的东西，
+导致又安装了更多软件包在home下。而且，linuxbrew是从源码编译软件的，所以相对来说速度较慢。
+
+
+解压软件
+解压7z或zip格式需要p7zip，由EPEL提供:
+sudo yum install p7zip
+
+解压rar格式需要unrar，该软件由Nux Dextop提供:
+sudo yum install unrar
+
+FTP客户端
+FTP客户端，还是有界面的filezilla比较方便些。
+sudo yum install filezilla
+
+
+
+
+

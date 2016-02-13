@@ -1,0 +1,26 @@
+net stop mysql #停止mysql服务
+net start mysql #启动mysql服务
+
+cmd  cd 进入 mysql/bin 输入
+mysql -uroot –p #登录MySQL服务器
+
+mysql> use database_name# 选择数据库
+mysql> show database#显示当前可用数据库
+mysql> show tables#显示单项数据库中的表
+
+mysql> GRANT ALL PRIVILEGES ON 数据库名.* TO ‘用户名’@’%’ IDENTIFIED BY ‘密码’ WITH GRANT OPTION
+创建一个对  hello数据库  有全部权限的  用户名为 xiaoming 密码为 lovexiaohong 的账户
+mysql> GRANT ALL PRIVILEGES ON hello.* TO ‘xiaoming‘@’%’ IDENTIFIED BY ‘lovexiaohong’ WITH GRANT OPTION
+
+‘用户名’@’%’ 这里的%表示此用户可以从任何地址登陆，也就是说可以远程来连接到此数据库服务器
+如果是‘用户名’@’localhost’ 则表示这个用户只允许从本地登录
+
+显示特定用户的权限
+mysql> show grants for 用户名
+
+//远程连接到数据库
+C:Program FilesMySQLMySQL Server 5.5bin>mysql -h 123.123.123.123 -u ischool –p
+
+//修改密码
+update mysql.user set password=’新密码’ where User=’用户名’
+注意这里新密码要用MD5加密后在更新进去

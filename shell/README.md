@@ -1,4 +1,4 @@
 # shell
 
-record some important shell
+record some important shells
 

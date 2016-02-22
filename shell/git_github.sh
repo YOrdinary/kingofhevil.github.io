@@ -71,3 +71,6 @@ git reset --hard origin/master
 
 git status
 //查看状态
+
+git rm -r --cached . 
+//清除缓存

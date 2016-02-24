@@ -70,7 +70,16 @@ git reset --hard origin/master
 整理自http://rogerdudler.github.io/git-guide/index.zh.html
 
 git status
-//查看状态
+//如果未执行git add命令，可以列出刚刚修改的变化
+
+git diff fileName
+//查看文件的更改内容
+
+git log xxx -1
+//表示只想看到提交记录xxx的一行信息
+
+git log xxx -1 -p
+//可以查看xxx提交记录具体修改了什么内容
 
 git rm -r --cached . 
 //清除缓存

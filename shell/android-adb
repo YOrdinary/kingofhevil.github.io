@@ -3,3 +3,16 @@ android list sdk -a
 
 android update sdk -a -u -t 3
 // parameters 3 refers the index listed in the output of last command
+
+adb shell 
+//manage your device in cmd lines when debug android applications
+
+  sqlite3 database_name
+  //open your SQLite database(at least exists a xx.db in this directory)
+  
+    .table
+    //list all tables in this db
+    
+    .schema
+    //dispaly the codes which created these tables
+    

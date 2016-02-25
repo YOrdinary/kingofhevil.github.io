@@ -83,3 +83,11 @@ git log xxx -1 -p
 
 git rm -r --cached . 
 //清除缓存
+
+git branch -a
+//查看当前版本库中有哪些分支
+
+git pull origin master = 1.git fetch origin master 2.git merge origin/master
+//因为git fetch同步下来的代码会被放到origin/master分支上。可以通过git diff origin/master查看远程库修改了哪些东西
+
+

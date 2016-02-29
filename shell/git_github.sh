@@ -90,4 +90,9 @@ git branch -a
 git pull origin master = 1.git fetch origin master 2.git merge origin/master
 //因为git fetch同步下来的代码会被放到origin/master分支上。可以通过git diff origin/master查看远程库修改了哪些东西
 
+git push origin --delete <branchName>
+//在Git v1.7.0 之后，可以使用这个语法删除远程分支
 
+git reset --hard <commit_id>
+git push origin HEAD --force
+//撤销commit

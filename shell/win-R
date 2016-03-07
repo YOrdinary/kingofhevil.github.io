@@ -61,3 +61,9 @@ win + R:
 64. net stop messenger-----停止信使服务 
 65. net start messenger----开始信使服务 
 66. nslookup-------网络管理的工具向导
+
+at 17:00 shutdown -s
+//在17：:00关机
+
+shutdown -a
+//取消之前设定的关机

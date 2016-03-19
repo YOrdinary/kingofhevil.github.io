@@ -15,4 +15,10 @@ adb shell
     
     .schema
     //dispaly the codes which created these tables
+  
+    
+run-as com.your.package
+cd /data/data/com.your.package
+//未获root权限的Android手机查看data数据
+//原理貌似先复制内容到sd卡，然后就可以查看了
     

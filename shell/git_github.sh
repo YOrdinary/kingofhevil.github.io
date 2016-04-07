@@ -59,6 +59,12 @@ git checkout -b feature_x
 git checkout master
 //切换回主分支
 
+git clean -fd
+//清空当前工作区没有加入版本库的文件和目录
+
+git checkout .
+//用暂存区内容刷新工作区
+
 git branch -d feature_x
 //再把新建的分支删掉
 
@@ -113,6 +119,9 @@ git diff HEAD
 
 git diff --cached
 //查看暂存区与版本库中文件的差异
+
+git ls-tree -l HEAD
+//查看HEAD目录树
 
 git log xxx -1
 //表示只想看到提交记录xxx的一行信息

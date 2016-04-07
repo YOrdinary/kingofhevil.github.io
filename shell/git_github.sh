@@ -13,6 +13,14 @@ ssh -T git@github.com
 git config --global user.name "your name" //配置用户名
 git config --global user.email "your email" //配置email 
 
+git config --unset --global user.name
+git config --unset --global user.email
+//清空配置
+
+git config user.name
+git config user.email
+//查询配置
+
 git init
 //将本地项目创建为git仓库
 
@@ -88,14 +96,23 @@ git reset --hard origin/master
 git status
 //如果未执行git add命令，可以列出刚刚修改的变化
 
+git status -s
+//精简地列出刚刚修改的变化
+
 git diff fileName
 //查看文件的更改内容
 
 git diff --word--diff
 //逐字比较
 
+git diff
+//查看工作区与暂存区文件的差异
+
+git diff HEAD
+//查看工作区与版本库文件的差异
+
 git diff --cached
-//可以看到添加到暂存区的文件所作出的修改
+//查看暂存区与版本库中文件的差异
 
 git log xxx -1
 //表示只想看到提交记录xxx的一行信息
@@ -118,3 +135,53 @@ git push origin --delete <branchName>
 git reset --hard <commit_id>
 git push origin HEAD --force
 //撤销commit
+
+git tag
+//列出已有标签
+
+git show v1.0
+//查看标签v1.0
+
+git tag -l 'v1.4.2.*'
+//只查看1.4.2系列版本
+
+git tag -a v1.4 -m 'my version 1.4'
+//新建标签
+
+git tag v1.4-lw
+//新建轻量级标签
+
+git push origin v1.0
+//将标签v1.0推送到远端仓库
+
+git stash
+//切换到新的工作分支之前保存工作进度
+
+git stash pop
+//切换回这个分支之后恢复之前保存的进度
+
+git svn clone <svn_repos_url>
+git svn fetch
+git svn rebase
+git svn dcommit
+//用git客户端操作svn服务器
+
+git rev-parse --git-dir
+//显示版本库.git目录所在位置
+
+git rev-parse --show-toplevel
+//显示工作区根目录
+
+git rev-parse --show-prefix
+//相对于工作区根目录的相对目录
+
+git rev-parse --show-cdup
+//显示从当前目录（cd）后退（up）到工作区的根的深度
+
+git config -e
+git config -e --global
+git config -e --system
+//git配置文件
+
+
+

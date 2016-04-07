@@ -23,8 +23,24 @@ git clone git://github.com/gotgit/xxx.git
 git add <filename>
 //提出更改（把它们添加到暂存区）
 
+git add -u
+//将所有修改过的文件加入暂存区
+
+git add -A
+//将本地删除文件和新增文件都登记提交到暂存区
+
+git add -p
+//对一个文件内修改的内容进行选择性提交
+
 git commit -m "代码提交信息"
 //改动已经提交到了 HEAD，但是还没到你的远端仓库
+
+git commit --amend -m"xxxxx"
+//修改最新提交的提交说明
+
+git rm --cached xxxx
+git commit --amend
+//取消最近的一次提交
 
 git push origin master
 //将这些改动提交到远端仓库
@@ -74,6 +90,12 @@ git status
 
 git diff fileName
 //查看文件的更改内容
+
+git diff --word--diff
+//逐字比较
+
+git diff --cached
+//可以看到添加到暂存区的文件所作出的修改
 
 git log xxx -1
 //表示只想看到提交记录xxx的一行信息

@@ -97,6 +97,12 @@ git fetch origin
 git reset --hard origin/master
 //假如你想丢弃你在本地的所有改动与提交，可以到服务器上获取最新的版本历史，并将你本地主分支指向它
 
+git reset --hard <commit_id>
+//
+
+git reset --hard HEAD^
+//将master重置到上一个老提交上
+
 整理自http://rogerdudler.github.io/git-guide/index.zh.html
 
 git status
@@ -141,7 +147,6 @@ git pull origin master = 1.git fetch origin master 2.git merge origin/master
 git push origin --delete <branchName>
 //在Git v1.7.0 之后，可以使用这个语法删除远程分支
 
-git reset --hard <commit_id>
 git push origin HEAD --force
 //撤销commit
 

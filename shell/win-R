@@ -67,3 +67,14 @@ at 17:00 shutdown -s
 
 shutdown -a
 //取消之前设定的关机
+
+
+//win10 设置热点
+netsh wlan set hostednetwork  mode=allow ssid=Win10FreeWiFi key=12345678
+
+//打开热点
+netsh wlan start hostednetwork
+
+//关闭热点
+netsh wlan set hostednetwork mode=disallow
+

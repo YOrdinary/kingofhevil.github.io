@@ -197,5 +197,9 @@ git config -e --global
 git config -e --system
 //git配置文件
 
-
+git config [--global] core.quotepath off
+git config [--global] --unset i18n.logoutputencoding
+git config [--global] --unset i18n.commitencoding
+//如果有中文目录名，执行上述配置使之支持中文。
+//详见https://github.com/msysgit/msysgit/wiki/Git-for-Windows-Unicode-Support
 

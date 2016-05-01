@@ -78,3 +78,9 @@ netsh wlan start hostednetwork
 //关闭热点
 netsh wlan set hostednetwork mode=disallow
 
+//显示dns缓存
+ipconfig /displaydns
+
+//清楚dns缓存
+ipconfig /flushdns
+

@@ -84,3 +84,8 @@ ipconfig /displaydns
 //清楚dns缓存
 ipconfig /flushdns
 
+//列出系统中所有的网络连接（包括 VPN 连接）
+netsh interface ipv4 show subinterfaces
+
+//修改并保存这个 VPN 连接的 MTU 
+netsh interface ipv4 set subinterface "VPN连接名称" mtu=1280 store=persistent

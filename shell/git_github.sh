@@ -203,3 +203,7 @@ git config [--global] --unset i18n.commitencoding
 //如果有中文目录名，执行上述配置使之支持中文。
 //详见https://github.com/msysgit/msysgit/wiki/Git-for-Windows-Unicode-Support
 
+--让一个分支完全取代主分支
+git checkout master
+git reset --hard develop  //先将本地的master分支重置成develop
+git push origin master --force //再推送到远程仓库 
